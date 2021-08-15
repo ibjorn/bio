@@ -5,7 +5,6 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Developerating'
-const hostname = window.location.hostname
 export const siteTitle = 'Next.js Experiment'
 
 export default function Layout({ children, home }) {
@@ -19,7 +18,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content={`https://${hostname}/images/head-pic.jpg`}
+          content="/images/head-pic.jpg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
