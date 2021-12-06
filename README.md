@@ -1,1 +1,1 @@
-A simple NextJS blog with markdown posts.
+Personal bio.

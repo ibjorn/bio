@@ -1,0 +1,9 @@
+.wrapper {
+  @apply w-full h-full absolute flex flex-col p-0 max-h-screen transform translate-x-0 transition-all duration-500 ease-in bg-primary;
+  &.showNav {
+    @apply transform -translate-x-full;
+  }
+}
+.main {
+  @apply py-0 px-0 flex flex-auto flex-col justify-start items-center w-full;
+}

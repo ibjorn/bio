@@ -1,0 +1,22 @@
+.main {
+  @apply justify-items-end px-4 items-center hidden lg:flex text-xs uppercase;
+  ul {
+    @apply flex items-center justify-between py-4 mx-auto;
+    li {
+      @apply block px-2;
+      a {
+        @apply no-underline transition ease-in duration-300 border-b border-transparent;
+        &:hover {
+          @apply no-underline border-b border-white;
+        }
+      }
+    }
+  }
+}
+
+.inActive {
+  @apply no-underline text-white filter contrast-150 drop-shadow-xl hover:no-underline hover:border-b hover:border-transparent;
+}
+.active {
+  @apply text-white hover:filter hover:drop-shadow-sm no-underline transition ease-in duration-300  border-b border-white hover:border-transparent;
+}

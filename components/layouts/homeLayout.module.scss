@@ -1,0 +1,19 @@
+.homeLayout {
+  @apply absolute w-full m-0 p-0 h-screen;
+}
+
+.container {
+  @apply w-full m-0 p-0 h-screen top-0;
+}
+.imgWrap {
+  @apply relative top-0 w-full h-screen z-0 object-bottom md:object-top;
+  span {
+    img {
+      @apply object-cover;
+    }
+  }
+}
+
+.textOverlayContainer {
+  @apply flex flex-col justify-end absolute h-screen bg-blend-hue bg-opacity-50 z-50 w-full top-0 text-white p-5;
+}

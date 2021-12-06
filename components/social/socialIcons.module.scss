@@ -1,0 +1,16 @@
+.socialIcons {
+  @apply text-white flex items-center w-full md:w-max;
+}
+.horizontal {
+  @apply flex flex-row flex-grow md:flex-grow-0 items-center justify-between py-2;
+  li {
+    @apply p-1;
+    a {
+      @apply flex items-center justify-center;
+    }
+  }
+}
+
+.desktopOnly {
+  @apply hidden md:flex;
+}

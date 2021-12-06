@@ -1,0 +1,20 @@
+.main {
+  @apply justify-items-start px-4 items-start flex z-100 flex-grow w-full;
+  ul {
+    @apply flex flex-col items-start justify-start py-4;
+    li {
+      @apply block px-2;
+      a {
+        @apply font-extrabold no-underline hover:underline text-3xl text-white hover:text-secondary hover:no-underline transition-colors duration-300 ease-in-out;
+      }
+    }
+  }
+}
+
+.inActiveOffCanvas {
+  font-family: 'Barlow Condensed', sans-serif;
+  @apply no-underline text-primary hover:text-secondary text-3xl;
+}
+.activeOffCanvas {
+  @apply text-secondary hover:text-primary;
+}

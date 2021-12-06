@@ -1,0 +1,43 @@
+@tailwind utilities;
+
+@layer utilities {
+  .heading2Xl {
+    @apply text-4xl leading-5 font-bold tracking-tighter my-4 mx-0;
+  }
+
+  .headingXl {
+    @apply text-3xl leading-5 font-bold tracking-tighter my-4 mx-0;
+  }
+
+  .headingLg {
+    @apply text-2xl leading-6 my-4 mx-0;
+  }
+
+  .headingMd {
+    @apply text-xl leading-6;
+  }
+
+  .borderCircle {
+    @apply rounded-full;
+  }
+
+  .colorInherit {
+    @apply text-current;
+  }
+
+  .padding1px {
+    @apply pt-1;
+  }
+
+  .list {
+    @apply list-none p-0 m-0;
+  }
+
+  .listItem {
+    @apply mt-0 mr-0 mb-5 ml-5;
+  }
+
+  .lightText {
+    @apply text-gray-500;
+  }
+}
