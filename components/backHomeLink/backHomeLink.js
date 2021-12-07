@@ -7,7 +7,7 @@ const BackHome = () => {
     <div className={backToHome}>
       <Link href='/'>
         <a>
-          ← Back <HomeIcon width='20' height='20' stroke='1' />
+          <span>←</span> <HomeIcon width='32' height='32' stroke='1' />
         </a>
       </Link>
     </div>

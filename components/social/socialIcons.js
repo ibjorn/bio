@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React, { useCallback } from 'react'
 import { socialLinks } from './../../data/socialLinks'
 import iconMap from './iconsMap'
@@ -13,7 +14,19 @@ function SocialIcons({ desktopOnly }) {
       }
 
       return (
-        <li key={item.id}>
+        <motion.li
+          key={item.id}
+          whileHover={{
+            position: 'relative',
+            zIndex: 1,
+            // background: '#0891B2',
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.3
+            }
+          }}
+        >
           <a
             href={item.url}
             target='_blank'
@@ -22,7 +35,7 @@ function SocialIcons({ desktopOnly }) {
           >
             <Icon width='20' height='20' />
           </a>
-        </li>
+        </motion.li>
       )
     })
   }, [])

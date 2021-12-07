@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-full h-full absolute flex flex-col p-0 max-h-screen transform translate-x-0 transition-all duration-500 ease-in bg-primary;
+  @apply w-full h-screen absolute flex flex-col p-0 max-h-screen transform translate-x-0 transition-all duration-500 ease-in bg-primary;
   &.showNav {
     @apply transform -translate-x-full;
   }

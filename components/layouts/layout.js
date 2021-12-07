@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
     <div className={`${styles.wrapper} ${isOpen && styles.showNav}`}>
       <Meta />
       <OffCanvasMenu />
-      <Header />
+      <Header home={home} />
       <main className={styles.main}>{children}</main>
       <Footer home={home} />
     </div>

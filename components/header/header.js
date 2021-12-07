@@ -1,27 +1,35 @@
-import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 import MainNav from '../nav/mainNav'
 import HamburgerMenuButton from '../offCanvas/hamburgerMenuButton'
+import Title from '../pagetitle/title'
 import SocialIcons from '../social/socialIcons'
-import { header, left, lowercase, right } from './header.module.scss'
+import { header, left, right } from './header.module.scss'
 
-const Header = () => {
-  const router = useRouter()
-  const title =
-    router.pathname === '/' ? (
-      <h1>
-        Bj<span className={lowercase}>ö</span>rn Potgieter
-      </h1>
-    ) : (
-      <h2 as='h1'>
-        Bj<span className={lowercase}>ö</span>rn Potgieter
-      </h2>
-    )
+const Header = ({ home }) => {
+  const variants = {
+    hidden: {
+      scale: 0.8,
+      opacity: 0
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        delay: 0.2
+      }
+    }
+  }
   return (
     <header className={header}>
-      <div className={left}>
-        {title}
-        <p>Web Developer | Code Tinkerer | Bonsai Master</p>
-      </div>
+      <motion.div
+        className={left}
+        initial='hidden'
+        animate='visible'
+        variants={variants}
+      >
+        <Title isHome={home} />
+      </motion.div>
       <div className={right}>
         <MainNav />
         <SocialIcons desktopOnly />

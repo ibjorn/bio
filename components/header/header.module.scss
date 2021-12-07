@@ -3,9 +3,11 @@
 }
 
 .left {
-  @apply animate-none hover:animate-pulse flex-shrink flex flex-col items-start md:items-center justify-center cursor-pointer max-w-min md:max-w-max;
+  // @apply animate-none hover:animate-pulse flex flex-shrink flex-col items-start md:items-center justify-center cursor-pointer max-w-min md:max-w-max;
+  @apply flex flex-shrink flex-col items-start md:items-center justify-center cursor-pointer max-w-min md:max-w-max;
 
-  h1 {
+  h1,
+  h2 {
     @apply text-3xl md:text-3xl font-bold uppercase tracking-widest text-justify block text-white filter drop-shadow-lg;
   }
   p {
