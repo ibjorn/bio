@@ -4,7 +4,7 @@ import { socialLinks } from './../../data/socialLinks'
 import iconMap from './iconsMap'
 import styles from './socialIcons.module.scss'
 
-function SocialIcons({ desktopOnly }) {
+function SocialIcons({ desktopOnly, dark }) {
   const SocialIconComponent = useCallback(() => {
     return socialLinks.map(item => {
       const Icon = iconMap[item.label]
@@ -33,7 +33,7 @@ function SocialIcons({ desktopOnly }) {
             rel='noopener noreferrer'
             title={item.label}
           >
-            <Icon width='20' height='20' />
+            <Icon width='20' height='20' color={dark ? '#1E293B' : '#ffffff'} />
           </a>
         </motion.li>
       )
@@ -42,7 +42,9 @@ function SocialIcons({ desktopOnly }) {
 
   return (
     <div
-      className={`${styles.socialIcons} ${desktopOnly && styles.desktopOnly}`}
+      className={`${styles.socialIcons} ${desktopOnly && styles.desktopOnly} ${
+        dark ? styles.darkColors : styles.lightColors
+      }`}
     >
       <ul className={styles.horizontal}>
         <SocialIconComponent />

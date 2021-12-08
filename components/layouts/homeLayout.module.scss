@@ -3,6 +3,15 @@
 }
 .main {
   @apply p-0 flex flex-auto flex-col justify-start items-center w-full;
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-base mt-4;
+  }
+  p {
+    @apply text-sm;
+  }
 }
 .section {
   @apply absolute w-full m-0 p-0 h-screen;

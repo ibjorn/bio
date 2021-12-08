@@ -15,8 +15,20 @@
 }
 
 .inActive {
-  @apply no-underline text-white filter contrast-150 drop-shadow-xl hover:no-underline hover:border-b hover:border-transparent;
+  @apply no-underline hover:no-underline hover:border-b hover:border-transparent;
+  &.lightColors {
+    @apply text-white filter contrast-150 drop-shadow-xl;
+  }
+  &.darkColors {
+    @apply text-black filter-none contrast-0 drop-shadow-none;
+  }
 }
 .active {
-  @apply text-white no-underline transition ease-in duration-300 border-b border-white hover:border-transparent hover:filter hover:drop-shadow-sm;
+  @apply no-underline transition ease-in duration-300 border-b hover:border-transparent;
+  &.lightColors {
+    @apply text-white border-white hover:filter hover:drop-shadow-sm;
+  }
+  &.darkColors {
+    @apply text-black border-black hover:filter-none hover:drop-shadow-none;
+  }
 }

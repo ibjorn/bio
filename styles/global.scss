@@ -22,7 +22,7 @@
     @media screen and (prefersreducedmotion: reduce) {
       scroll-behavior: 'auto';
     }
-    font-family: 'Montserrat', 'Nunito', sans-serif;
+    font-family: 'Montserrat', 'PT Sans', sans-serif;
   }
   body {
     @apply min-h-screen subpixel-antialiased bg-primary;
@@ -33,7 +33,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Nunito', 'Montserrat', sans-serif;
+    font-family: 'PT Sans', 'Montserrat', sans-serif;
     @apply uppercase font-bold;
   }
 }

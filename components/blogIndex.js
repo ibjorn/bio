@@ -15,7 +15,7 @@ export default function BlogIndex({ posts }) {
         <ul className={utilStyles.list}>
           {posts.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/blog/${id}`}>
+              <Link href={`/blog/${id}/`}>
                 <a>{title}</a>
               </Link>
               <br />

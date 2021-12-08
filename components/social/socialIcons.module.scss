@@ -1,5 +1,11 @@
 .socialIcons {
-  @apply text-white flex items-center w-full md:w-max;
+  @apply flex items-center w-full md:w-max;
+  &.lightColors {
+    @apply text-white;
+  }
+  &.darkColors {
+    @apply text-black;
+  }
 }
 .horizontal {
   @apply flex flex-row flex-grow md:flex-grow-0 items-center justify-between py-2;

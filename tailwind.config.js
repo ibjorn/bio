@@ -32,13 +32,17 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Nunito', 'Montserrat', ...defaultTheme.fontFamily.sans]
+        sans: ['PT Sans', 'Montserrat', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: '#0891B2',
         secondary: '#0EA5E9',
         muted: '#737373',
         success: '#4ADE80'
+      },
+      letterSpacing: {
+        widerthan: '0.175em',
+        tightest: '-.04em'
       },
       zIndex: {
         60: '60',

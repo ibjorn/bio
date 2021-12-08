@@ -2,7 +2,7 @@ export const menuItems = [
   {
     id: 1,
     label: 'Bio',
-    path: '/bio',
+    path: '/bio/',
     altTitle: 'A brief web developer bio',
     isInternal: true
   },
@@ -16,7 +16,7 @@ export const menuItems = [
   {
     id: 3,
     label: 'Blog',
-    path: '/blog',
+    path: '/blog/',
     altTitle: 'Web developer ramblings',
     isInternal: true
   }

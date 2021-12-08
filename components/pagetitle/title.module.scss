@@ -2,7 +2,7 @@
   @apply lowercase;
 }
 .heading {
-  @apply text-3xl md:text-3xl font-bold uppercase tracking-widest text-justify block;
+  @apply text-3xl md:text-3xl font-bold uppercase tracking-widerthan text-justify block;
   &.lightColors {
     @apply text-white filter drop-shadow-lg;
   }

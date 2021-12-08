@@ -2,7 +2,7 @@ import ActiveLink from '../../utils/activeLink'
 import { menuItems } from './../../data/menuItems'
 import styles from './mainNav.module.scss'
 
-const MainNav = () => {
+const MainNav = ({ dark }) => {
   return (
     <nav className={styles.main}>
       <ul>
@@ -14,13 +14,20 @@ const MainNav = () => {
                   activeClassName={`${styles.active}`}
                   href={item.path}
                 >
-                  <a className={`${styles.inActive}`} title={item.altTitle}>
+                  <a
+                    className={`${styles.inActive} ${
+                      dark ? styles.darkColors : styles.lightColors
+                    }`}
+                    title={item.altTitle}
+                  >
                     {item.label}
                   </a>
                 </ActiveLink>
               ) : (
                 <a
-                  className={`${styles.inActive}`}
+                  className={`${styles.inActive} ${
+                    dark ? styles.darkColors : styles.lightColors
+                  }`}
                   href={item.path}
                   title={item.altTitle}
                 >

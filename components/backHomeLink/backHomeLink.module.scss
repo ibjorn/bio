@@ -1,6 +1,12 @@
 .backToHome {
   @apply z-100;
   a {
-    @apply flex flex-row items-center p-2 cursor-pointer text-white text-xl;
+    @apply flex flex-row items-center p-2 cursor-pointer text-xl;
+    &.lightColors {
+      @apply text-white;
+    }
+    &.darkColors {
+      @apply text-black;
+    }
   }
 }

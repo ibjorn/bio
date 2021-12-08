@@ -31,9 +31,9 @@ const Header = ({ home, overlay, dark }) => {
         <Title isHome={home} dark={dark} />
       </motion.div>
       <div className={right}>
-        <MainNav />
-        <SocialIcons desktopOnly />
-        <HamburgerMenuButton />
+        <MainNav dark={dark} />
+        <SocialIcons desktopOnly dark={dark} />
+        <HamburgerMenuButton dark={dark} />
         <span>Open main menu</span>
       </div>
     </header>

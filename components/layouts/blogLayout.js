@@ -11,7 +11,7 @@ const BlogLayout = ({ children }) => {
           <div className={containerWrap}>{children}</div>
         </section>
       </main>
-      <Footer />
+      <Footer dark />
     </div>
   )
 }

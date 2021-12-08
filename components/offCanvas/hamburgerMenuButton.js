@@ -1,11 +1,13 @@
 import { useContext } from 'react'
 import { OffCanvasContext } from '../../store/offCanvasProvider'
 import {
+  darkColors,
   hamburgerButton,
-  hamburgerLine
+  hamburgerLine,
+  lightColors
 } from './hamburgerMenuButton.module.scss'
 
-const HamburgerMenuButton = () => {
+const HamburgerMenuButton = ({ dark }) => {
   const { handleBurgerMenuClick, isOpen } = useContext(OffCanvasContext)
 
   return (
@@ -14,13 +16,19 @@ const HamburgerMenuButton = () => {
       onClick={() => handleBurgerMenuClick(!isOpen)}
     >
       <div
-        className={`${hamburgerLine} ${isOpen && 'rotate-45 translate-y-3'}`}
+        className={`${hamburgerLine} ${dark ? darkColors : lightColors} ${
+          isOpen && 'rotate-45 translate-y-3'
+        }`}
       />
       <div
-        className={`${hamburgerLine} ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+        className={`${hamburgerLine} ${dark ? darkColors : lightColors} ${
+          isOpen ? 'opacity-0' : 'opacity-100'
+        }`}
       />
       <div
-        className={`${hamburgerLine} ${isOpen && '-rotate-45 -translate-y-3'}`}
+        className={`${hamburgerLine} ${dark ? darkColors : lightColors} ${
+          isOpen && '-rotate-45 -translate-y-3'
+        }`}
       />
     </div>
   )
