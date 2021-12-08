@@ -30,6 +30,7 @@ export default function Post({ postData }) {
         keywords={postData.keywords}
         slug={postData.slug}
         image={postData.image}
+        blogPost
       />
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

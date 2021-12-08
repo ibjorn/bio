@@ -10,7 +10,9 @@ function Meta({
   blogPost,
   indexPage
 }) {
-  const canonicalUrl = `${siteMeta.siteUrl}/${slug}`
+  const canonicalUrl = `${siteMeta.siteUrl}/${
+    slug && slug !== '/' ? slug + '/' : ''
+  }`
   const pagetitle =
     title === siteMeta.siteName
       ? siteMeta.siteName
