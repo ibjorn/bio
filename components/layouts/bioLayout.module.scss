@@ -1,19 +1,29 @@
-.bioLayout {
-  @apply absolute w-full m-0 p-0 h-screen;
+.wrapper {
+  @apply w-full min-h-screen absolute flex flex-col p-0 bg-secondary;
 }
-
-.container {
-  @apply w-full m-0 p-0 h-screen top-0;
+.main {
+  @apply flex flex-col w-full;
 }
-.imgWrap {
-  @apply relative top-0 w-full h-screen z-0 object-bottom md:object-top;
-  span {
-    img {
-      @apply object-cover;
+.section {
+  @apply w-full m-0 py-32 px-0;
+}
+.containerWrap {
+  @apply container mx-auto px-6 md:px-32;
+  article {
+    @apply prose text-white;
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a {
+      @apply text-white;
+    }
+    a {
+      @apply text-white font-bold no-underline transition ease-in duration-300 border-b border-white;
+      &:hover {
+        @apply no-underline border-b border-transparent;
+      }
     }
   }
-}
-
-.textOverlayContainer {
-  @apply flex flex-col justify-end absolute h-screen bg-primary z-50 w-full top-0 text-white p-5;
 }

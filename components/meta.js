@@ -6,16 +6,19 @@ function Meta({
   description,
   keywords,
   image,
-  url,
+  slug,
   blogPost,
   indexPage
 }) {
-  const canonicalUrl = `${siteMeta.siteUrl}${url}`
+  const canonicalUrl = `${siteMeta.siteUrl}/${slug}`
   const pagetitle =
     title === siteMeta.siteName
       ? siteMeta.siteName
       : title + ' | ' + siteMeta.siteName
   const pageType = blogPost ? 'article' : indexPage ? 'blog' : 'website'
+  const ogImage = image
+    ? siteMeta.siteUrl + image
+    : siteMeta.siteUrl + siteMeta.siteImage
   return (
     <Head>
       <meta charSet='utf-8' />
@@ -34,7 +37,7 @@ function Meta({
       <meta name='og:title' content={title} />
       <meta name='og:description' content={description} />
       <meta property='og:url' content={canonicalUrl} />
-      <meta property='og:image' content={image} />
+      <meta property='og:image' content={ogImage} />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
       <meta property='og:locale' content='en_ZA' />
@@ -51,7 +54,6 @@ Meta.defaultProps = {
   title: siteMeta.siteName,
   description: siteMeta.siteDescription,
   keywords: siteMeta.siteKeywords,
-  image: siteMeta.siteUrl + siteMeta.siteImage,
   blogPost: false,
   indexPage: false
 }

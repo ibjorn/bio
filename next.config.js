@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  trailingSlash: true,
+  // trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
   sassOptions: {

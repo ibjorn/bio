@@ -1,6 +1,6 @@
-import Head from 'next/head'
 import Date from '../../components/date'
-import Layout from '../../components/layout'
+import BlogLayout from '../../components/layouts/blogLayout'
+import Meta from '../../components/meta'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import utilStyles from '../../styles/utils.module.scss'
 
@@ -14,7 +14,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = await getAllPostIds()
   return {
     paths,
     fallback: false
@@ -23,10 +23,14 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+    <BlogLayout>
+      <Meta
+        title={postData.title}
+        description={postData.description}
+        keywords={postData.keywords}
+        slug={postData.slug}
+        image={postData.image}
+      />
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
@@ -34,6 +38,6 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </BlogLayout>
   )
 }

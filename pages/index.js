@@ -1,5 +1,4 @@
 import HomeLayout from '../components/layouts/homeLayout'
-import Layout from '../components/layouts/layout'
 import Meta from '../components/meta'
 
 export default function Home() {
@@ -14,10 +13,8 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return (
     <>
-      <Meta url='/' />
-      <Layout home>
-        <HomeLayout>{page}</HomeLayout>
-      </Layout>
+      <Meta slug='/' />
+      <HomeLayout>{page}</HomeLayout>
     </>
   )
 }

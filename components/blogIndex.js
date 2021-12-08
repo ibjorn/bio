@@ -1,8 +1,8 @@
-import { Link } from 'next/link'
+import Link from 'next/link'
 import utilStyles from '../styles/utils.module.scss'
 import Date from './date'
 
-const Blog = () => {
+export default function BlogIndex({ posts }) {
   return (
     <>
       <section className={utilStyles.headingMd}>
@@ -13,9 +13,9 @@ const Blog = () => {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {posts.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/blog/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
@@ -29,5 +29,3 @@ const Blog = () => {
     </>
   )
 }
-
-export default Blog

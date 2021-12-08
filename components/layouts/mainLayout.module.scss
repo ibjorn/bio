@@ -1,0 +1,6 @@
+.wrapper {
+  @apply w-full min-h-screen absolute p-0 transform translate-x-0 transition-all duration-500 ease-in bg-primary;
+  &.showNav {
+    @apply transform -translate-x-full;
+  }
+}

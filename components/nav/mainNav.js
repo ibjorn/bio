@@ -9,9 +9,24 @@ const MainNav = () => {
         {menuItems.map(item => {
           return (
             <li key={item.id}>
-              <ActiveLink activeClassName={styles.active} href={item.path}>
-                <a className={styles.inActive}>{item.label}</a>
-              </ActiveLink>
+              {item.isInternal ? (
+                <ActiveLink
+                  activeClassName={`${styles.active}`}
+                  href={item.path}
+                >
+                  <a className={`${styles.inActive}`} title={item.altTitle}>
+                    {item.label}
+                  </a>
+                </ActiveLink>
+              ) : (
+                <a
+                  className={`${styles.inActive}`}
+                  href={item.path}
+                  title={item.altTitle}
+                >
+                  {item.label}
+                </a>
+              )}
             </li>
           )
         })}

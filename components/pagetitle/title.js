@@ -1,13 +1,19 @@
 import Link from 'next/link'
-import { spanCase } from './title.module.scss'
+import {
+  darkColors,
+  heading,
+  lightColors,
+  paragraph,
+  spanCase
+} from './title.module.scss'
 
-const Title = ({ isHome }) => {
+const Title = ({ isHome, dark }) => {
   const title = isHome ? (
-    <h1>
+    <h1 className={`${heading} ${dark ? darkColors : lightColors}`}>
       Bj<span className={spanCase}>ö</span>rn Potgieter
     </h1>
   ) : (
-    <h2>
+    <h2 className={`${heading} ${dark ? darkColors : lightColors}`}>
       Bj<span className={spanCase}>ö</span>rn Potgieter
     </h2>
   )
@@ -16,7 +22,9 @@ const Title = ({ isHome }) => {
     <Link href='/'>
       <a>
         {title}
-        <p>{tagline}</p>
+        <p className={`${paragraph} ${dark ? darkColors : lightColors}`}>
+          {tagline}
+        </p>
       </a>
     </Link>
   )

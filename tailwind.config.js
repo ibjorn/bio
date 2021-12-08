@@ -1,17 +1,25 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
   purge: [
     // Use *.tsx if using TypeScript
-    './pages/**/*.js',
-    './components/**/*.js'
+    './components/alert/**/*.js',
+    './components/backHomeLink/**/*.js',
+    './components/footer/**/*.js',
+    './components/header/**/*.js',
+    './components/icons/**/*.js',
+    './components/layouts/**/*.js',
+    './components/nav/**/*.js',
+    './components/offCanvas/**/*.js',
+    './components/pageTitle/**/*.js',
+    './components/social/**/*.js',
+    './components/**/*.js',
+    './pages/**/*.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fontFamily: {
-      sans: ['Jost', 'Montserrat', 'sans-serif']
-    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -23,6 +31,9 @@ module.exports = {
       green: colors.green
     },
     extend: {
+      fontFamily: {
+        sans: ['Nunito', 'Montserrat', ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         primary: '#0891B2',
         secondary: '#0EA5E9',
@@ -56,5 +67,5 @@ module.exports = {
       animation: ['hover', 'group-hover']
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }

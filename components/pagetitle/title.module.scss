@@ -1,3 +1,21 @@
 .spanCase {
   @apply lowercase;
 }
+.heading {
+  @apply text-3xl md:text-3xl font-bold uppercase tracking-widest text-justify block;
+  &.lightColors {
+    @apply text-white filter drop-shadow-lg;
+  }
+  &.darkColors {
+    @apply text-black filter-none drop-shadow-none;
+  }
+}
+.paragraph {
+  @apply text-xs uppercase md:text-justify tracking-normal md:tracking-tighter md:block mt-px align-top;
+  &.lightColors {
+    @apply text-white border-t border-white;
+  }
+  &.darkColors {
+    @apply text-black border-t border-black filter-none drop-shadow-none;
+  }
+}

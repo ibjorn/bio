@@ -1,4 +1,10 @@
-.homeLayout {
+.wrapper {
+  @apply w-full min-h-screen absolute flex flex-col p-0;
+}
+.main {
+  @apply p-0 flex flex-auto flex-col justify-start items-center w-full;
+}
+.section {
   @apply absolute w-full m-0 p-0 h-screen;
 }
 

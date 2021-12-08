@@ -22,14 +22,10 @@
     @media screen and (prefersreducedmotion: reduce) {
       scroll-behavior: 'auto';
     }
+    font-family: 'Montserrat', 'Nunito', sans-serif;
   }
   body {
-    @apply min-h-screen subpixel-antialiased;
-  }
-  html,
-  body {
-    font-family: 'Montserrat', 'Jost', sans-serif;
-    @apply text-base leading-none;
+    @apply min-h-screen subpixel-antialiased bg-primary;
   }
   h1,
   h2,
@@ -37,38 +33,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Jost', 'Montserrat', sans-serif;
+    font-family: 'Nunito', 'Montserrat', sans-serif;
     @apply uppercase font-bold;
   }
 }
-
-// html,
-// body {
-//   padding: 0;
-//   margin: 0;
-//   font-family: 'Montserrat', 'Jost', sans-serif;
-//   line-height: 1.6;
-//   font-size: 18px;
-// }
-//
-// h1, h2, h3, h4, h5, h6 {
-//     font-family: 'Jost', 'Montserrat', sans-serif;
-// }
-//
-// * {
-//   box-sizing: border-box;
-// }
-//
-// a {
-//   color: #0070f3;
-//   text-decoration: none;
-// }
-//
-// a:hover {
-//   text-decoration: underline;
-// }
-//
-// img {
-//   max-width: 100%;
-//   display: block;
-// }

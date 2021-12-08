@@ -1,11 +1,11 @@
 import Footer from '../footer/footer'
 import Header from '../header/header'
-import { containerWrap, main, section, wrapper } from './bioLayout.module.scss'
+import { containerWrap, main, section, wrapper } from './blogLayout.module.scss'
 
-const BioLayout = ({ children }) => {
+const BlogLayout = ({ children }) => {
   return (
     <div className={wrapper}>
-      <Header shade />
+      <Header dark />
       <main className={main}>
         <section className={section}>
           <div className={containerWrap}>{children}</div>
@@ -16,4 +16,4 @@ const BioLayout = ({ children }) => {
   )
 }
 
-export default BioLayout
+export default BlogLayout
