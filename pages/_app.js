@@ -1,9 +1,22 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect } from 'react'
 import MainLayout from '../components/layouts/mainLayout'
 import OffCanvasProvider from '../store/offCanvasProvider'
 import '../styles/global.scss'
 
 export default function App({ Component, pageProps, router }) {
+  useEffect(() => {
+    const handleRouteChange = url => {
+      window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+        page_path: url
+      })
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   const getLayout = Component.getLayout || (page => page)
   const useLayout = getLayout(<Component {...pageProps} />)
 
