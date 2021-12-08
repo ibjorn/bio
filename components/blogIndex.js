@@ -8,7 +8,6 @@ export default function BlogIndex({ posts }) {
       <section className={utilStyles.headingMd}>
         <p>Hello world.</p>
         <p>Is this thing on?</p>
-        <p>A simple NextJS blog with markdown posts.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
