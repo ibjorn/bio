@@ -37,8 +37,7 @@ export default function App({ Component, pageProps, router }) {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 0.4,
-                delay: 0.1
+                duration: 0.2
               }
             },
             pageExit: {
