@@ -15,8 +15,7 @@ const Header = ({ home, overlay, dark }) => {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.2,
-        delay: 0.1
+        duration: 0.2
       }
     }
   }
