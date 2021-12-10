@@ -12,18 +12,6 @@ export default function App({ Component, pageProps, router }) {
       router.events.off('routeChangeComplete', pageview)
     }
   }, [router.events])
-  // old code for UA
-  // useEffect(() => {
-  //   const handleRouteChange = url => {
-  //     window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
-  //       page_path: url
-  //     })
-  //   }
-  //   router.events.on('routeChangeComplete', handleRouteChange)
-  //   return () => {
-  //     router.events.off('routeChangeComplete', handleRouteChange)
-  //   }
-  // }, [router.events])
 
   const getLayout = Component.getLayout || (page => page)
   const useLayout = getLayout(<Component {...pageProps} />)
