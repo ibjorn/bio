@@ -32,7 +32,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['PT Sans', 'Montserrat', ...defaultTheme.fontFamily.sans]
+        sans: ['Raleway', 'Oswald', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: '#0891B2',
@@ -42,7 +42,9 @@ module.exports = {
       },
       letterSpacing: {
         widerthan: '0.175em',
-        tightest: '-.04em'
+        widely: '0.077em',
+        tightest: '-.04em',
+        tightly: '-0.039em'
       },
       zIndex: {
         60: '60',

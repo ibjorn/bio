@@ -1,4 +1,4 @@
-import BlogIndex from '../components/blogIndex'
+import BlogIndex from '../components/blog/blogIndex'
 import BlogLayout from '../components/layouts/blogLayout'
 import Meta from '../components/meta'
 import { getSortedPostsData } from '../lib/posts'

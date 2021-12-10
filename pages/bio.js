@@ -12,17 +12,22 @@ export async function getStaticProps() {
 }
 
 export default function Bio({ pageData }) {
-  return <article dangerouslySetInnerHTML={{ __html: pageData.contentHtml }} />
+  return (
+    <article>
+      <h1>{pageData?.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: pageData?.contentHtml }} />
+    </article>
+  )
 }
 
 Bio.getLayout = function getLayout(page) {
   return (
     <>
       <Meta
-        title={page.props.pageData.title}
-        description={page.props.pageData.description}
-        keywords={page.props.pageData.keywords}
-        slug={page.props.pageData.slug}
+        title={page?.props?.pageData?.title}
+        description={page?.props?.pageData?.description}
+        keywords={page?.props?.pageData?.keywords}
+        slug={page?.props?.pageData?.slug}
       />
       <BioLayout>{page}</BioLayout>
     </>

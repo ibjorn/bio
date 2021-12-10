@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-full h-full absolute flex flex-col p-0 bg-secondary overflow-y-auto;
+  @apply w-full h-full relative flex flex-col p-0 bg-secondary overflow-y-auto;
 }
 .main {
   @apply flex flex-col w-full;
@@ -20,7 +20,7 @@
       @apply text-white;
     }
     a {
-      @apply text-white font-bold no-underline transition ease-in duration-300 border-b border-white;
+      @apply text-white font-extrabold no-underline transition ease-in duration-300 border-b border-white;
       &:hover {
         @apply no-underline border-b border-transparent;
       }

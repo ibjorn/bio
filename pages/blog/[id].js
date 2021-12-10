@@ -1,8 +1,7 @@
-import Date from '../../components/date'
+import BlogPost from '../../components/blog/blogPost'
 import BlogLayout from '../../components/layouts/blogLayout'
 import Meta from '../../components/meta'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import utilStyles from '../../styles/utils.module.scss'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -25,22 +24,18 @@ export default function Post({ postData }) {
   return (
     <BlogLayout>
       <Meta
-        title={postData.title}
-        description={postData.description}
-        keywords={postData.keywords}
-        slug={postData.slug}
-        image={postData.image}
+        title={postData?.title}
+        description={postData?.description}
+        keywords={postData?.keywords}
+        slug={postData?.slug}
+        image={postData?.image}
         blogPost
       />
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <small>
-            <Date dateString={postData.date} />
-          </small>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+      <BlogPost
+        title={postData?.title}
+        date={postData?.date}
+        content={postData?.contentHtml}
+      />
     </BlogLayout>
   )
 }

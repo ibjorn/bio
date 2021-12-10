@@ -10,7 +10,7 @@
 .horizontal {
   @apply flex flex-row flex-grow md:flex-grow-0 items-center justify-between py-2;
   li {
-    @apply p-1;
+    @apply p-2;
     a {
       @apply flex items-center justify-center;
     }
@@ -18,5 +18,5 @@
 }
 
 .desktopOnly {
-  @apply hidden md:flex;
+  @apply hidden lg:flex;
 }

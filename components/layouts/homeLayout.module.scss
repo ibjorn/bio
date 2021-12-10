@@ -1,16 +1,16 @@
 .wrapper {
-  @apply w-full max-h-screen absolute flex flex-col p-0;
+  @apply w-full max-h-screen relative flex flex-col p-0;
 }
 .main {
   @apply p-0 flex flex-auto flex-col justify-start items-center w-full;
   h2 {
-    @apply text-lg;
+    @apply text-xl;
   }
   h3 {
-    @apply text-base mt-4;
+    @apply text-lg mt-4;
   }
   p {
-    @apply text-sm;
+    @apply text-base;
   }
 }
 .section {

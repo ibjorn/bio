@@ -30,7 +30,7 @@ const HomeLayout = ({ children }) => {
                 // height={500} automatically provided
                 // blurDataURL='data:...' // automatically provided
                 // blurDataURL='/images/placeholder.png'
-                placeholder='blur' // Optional blur-up while loading
+                // placeholder='blur' // Optional blur-up while loading
               />
             </div>
             <div className={textOverlayContainer}>{children}</div>

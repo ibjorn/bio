@@ -33,7 +33,7 @@ function SocialIcons({ desktopOnly, dark }) {
             rel='noopener noreferrer'
             title={item.label}
           >
-            <Icon width='20' height='20' color={dark ? '#1E293B' : '#ffffff'} />
+            <Icon width='24' height='24' color={dark ? '#1E293B' : '#ffffff'} />
           </a>
         </motion.li>
       )

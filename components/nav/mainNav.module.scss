@@ -1,5 +1,5 @@
 .main {
-  @apply justify-items-end px-4 items-center hidden lg:flex text-xs uppercase;
+  @apply justify-items-end px-4 items-center hidden lg:flex text-sm uppercase;
   ul {
     @apply flex items-center justify-between py-4 mx-auto;
     li {

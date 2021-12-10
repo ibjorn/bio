@@ -22,18 +22,39 @@
     @media screen and (prefersreducedmotion: reduce) {
       scroll-behavior: 'auto';
     }
-    font-family: 'Montserrat', 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   body {
-    @apply min-h-screen subpixel-antialiased bg-primary;
+    @apply min-h-screen antialiased bg-primary;
   }
-  h1,
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    @apply font-normal text-6xl mb-8 tracking-tightest;
+  }
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: 'PT Sans', 'Montserrat', sans-serif;
-    @apply uppercase font-bold;
+    font-family: 'Oswald', sans-serif;
+    @apply font-extralight tracking-tight;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h4,
+  h5,
+  h6 {
+    @apply text-3xl;
+  }
+  strong,
+  bold {
+    @apply font-extrabold;
+  }
+  p {
+    @apply leading-tight;
   }
 }

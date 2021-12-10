@@ -38,7 +38,7 @@ class AppDocument extends Document {
             }}
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Raleway:wght@400;800&display=swap'
             rel='stylesheet'
           />
         </Head>

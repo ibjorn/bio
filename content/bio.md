@@ -6,8 +6,6 @@ date: '2021-12-08'
 slug: 'bio'
 ---
 
-# Web Developer Over Here
-
 Since my introduction to the internet in 1993 by a school friend I was hooked.
 
 I guess my curiousity since childhood with trying to understand what made things work by taking them apart is what lead me on my journey to becoming a self-taught web developer.
