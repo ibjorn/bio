@@ -20,7 +20,7 @@
       @apply text-white;
     }
     a {
-      @apply text-white font-extrabold no-underline transition ease-in duration-300 border-b border-white;
+      @apply text-white font-extrabold no-underline transition ease-in duration-150 border-b border-white;
       &:hover {
         @apply no-underline border-b border-transparent;
       }

@@ -1,4 +1,4 @@
-const External = ({
+const ExternalIcon = ({
   color = '#ffffff',
   width = '24',
   height = '24',
@@ -10,7 +10,7 @@ const External = ({
       width={width}
       height={height}
       viewBox='0 0 24 24'
-      fill={color}
+      fill='none'
       stroke={color}
     >
       <path
@@ -22,4 +22,4 @@ const External = ({
     </svg>
   )
 }
-export default External
+export default ExternalIcon

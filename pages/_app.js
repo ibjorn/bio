@@ -31,7 +31,7 @@ export default function App({ Component, pageProps, router }) {
           variants={{
             pageInitial: {
               x: '100%',
-              opacity: 0
+              opacity: 0.3
             },
             pageAnimate: {
               x: 0,

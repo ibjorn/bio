@@ -3,7 +3,12 @@
   ul {
     @apply flex items-center justify-between py-4 mx-auto;
     li {
-      @apply block px-2;
+      @apply flex justify-between px-2;
+      a {
+        &.externalLink {
+          @apply mr-1;
+        }
+      }
       // a {
       //   @apply no-underline transition ease-in duration-300 border-b border-transparent;
       //   &:hover {
@@ -24,7 +29,7 @@
   }
 }
 .active {
-  @apply no-underline transition ease-in duration-300 border-b hover:border-transparent;
+  @apply no-underline transition ease-in duration-150 border-b hover:border-transparent;
   &.lightColors {
     @apply text-white border-white hover:filter hover:drop-shadow-sm;
   }

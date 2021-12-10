@@ -20,7 +20,7 @@
       @apply text-black;
     }
     a {
-      @apply text-black font-extrabold no-underline transition ease-in duration-300 border-b border-black;
+      @apply text-black font-extrabold no-underline transition ease-in duration-150 border-b border-black;
       &:hover {
         @apply no-underline border-b border-transparent;
       }

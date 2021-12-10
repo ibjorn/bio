@@ -1,4 +1,5 @@
 import ActiveLink from '../../utils/activeLink'
+import ExternalIcon from '../icons/externalIcon'
 import { menuItems } from './../../data/menuItems'
 import styles from './mainNav.module.scss'
 
@@ -24,15 +25,20 @@ const MainNav = ({ dark }) => {
                   </a>
                 </ActiveLink>
               ) : (
-                <a
-                  className={`${styles.inActive} ${
-                    dark ? styles.darkColors : styles.lightColors
-                  }`}
-                  href={item.path}
-                  title={item.altTitle}
-                >
-                  {item.label}
-                </a>
+                <>
+                  <a
+                    className={`${styles.inActive} ${
+                      dark ? styles.darkColors : styles.lightColors
+                    } ${styles.externalLink}`}
+                    href={item.path}
+                    title={item.altTitle}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {item.label}
+                  </a>
+                  <ExternalIcon width={14} height={14} />
+                </>
               )}
             </li>
           )

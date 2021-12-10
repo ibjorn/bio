@@ -9,13 +9,13 @@ const Header = ({ home, overlay, dark }) => {
   const variants = {
     hidden: {
       scale: 0.8,
-      opacity: 0
+      opacity: 0.3
     },
     visible: {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.2
+        duration: 0.1
       }
     }
   }
