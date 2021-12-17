@@ -1,4 +1,4 @@
-const dev = process.env.NODE_ENV !== 'production'
+import { dev } from '../utils/helpers'
 
 export const server = dev ? 'http://localhost:3000' : 'https://bjorn.africa'
 

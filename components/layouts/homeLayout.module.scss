@@ -4,10 +4,10 @@
 .main {
   @apply p-0 flex flex-auto flex-col justify-start items-center w-full;
   h2 {
-    @apply text-xl;
+    @apply text-2xl;
   }
   h3 {
-    @apply text-lg mt-4;
+    @apply text-xl mt-4;
   }
   p {
     @apply text-base;
@@ -22,13 +22,19 @@
 }
 .imgWrap {
   @apply relative top-0 w-full h-screen z-0 object-bottom md:object-top;
-  span {
-    img {
-      @apply object-cover;
-    }
-  }
+  // span {
+  //   img {
+  //     @apply object-cover;
+  //   }
+  // }
 }
 
 .textOverlayContainer {
   @apply flex flex-col justify-end absolute h-screen bg-blend-hue bg-opacity-50 z-50 w-full top-0 text-white p-5;
+  article {
+    h2,
+    h3 {
+      @apply text-white;
+    }
+  }
 }

@@ -1,19 +1,21 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "commonjs": true,
+    "amd": true
   },
-  "extends": ["next/core-web-vitals", "plugin"],
+  "extends": ["next/core-web-vitals", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
     "sourceType": "module"
-  },
-  "plugins": ["prettier"],
-  "rules": {
-    "prefer-const": "error",
-    "prettier/prettier": "error"
   }
+  // "plugins": ["prettier"],
+  // "rules": {
+  //   "prefer-const": "error",
+  //   "prettier/prettier": "error"
+  // }
 }

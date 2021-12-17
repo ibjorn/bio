@@ -1,5 +1,6 @@
 import BioLayout from '../components/layouts/bioLayout'
 import Meta from '../components/meta'
+import BioPage from '../components/page/bioPage'
 import { getPageData } from '../lib/pages'
 
 export async function getStaticProps() {
@@ -12,12 +13,7 @@ export async function getStaticProps() {
 }
 
 export default function Bio({ pageData }) {
-  return (
-    <article>
-      <h1>{pageData?.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: pageData?.contentHtml }} />
-    </article>
-  )
+  return <BioPage title={pageData?.title} body={pageData?.contentHtml} />
 }
 
 Bio.getLayout = function getLayout(page) {

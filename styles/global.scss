@@ -10,8 +10,8 @@
     @apply w-1 h-0 bg-secondary;
   }
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
-    box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
+    // -webkit-box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
+    // box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
     @apply bg-secondary;
   }
   ::-webkit-scrollbar-thumb {
@@ -22,39 +22,58 @@
     @media screen and (prefersreducedmotion: reduce) {
       scroll-behavior: 'auto';
     }
-    font-family: 'Raleway', sans-serif;
   }
   body {
     @apply min-h-screen antialiased bg-primary;
   }
-  h1 {
-    font-family: 'Oswald', sans-serif;
-    @apply font-normal text-6xl mb-8 tracking-tightest;
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Oswald', sans-serif;
-    @apply font-extralight tracking-tight;
-  }
-  h2 {
-    @apply text-5xl;
-  }
-  h3 {
-    @apply text-4xl;
-  }
-  h4,
-  h5,
-  h6 {
-    @apply text-3xl;
-  }
-  strong,
-  bold {
-    @apply font-extrabold;
-  }
-  p {
-    @apply leading-tight;
-  }
+  // h1 {
+  //   @apply font-heading font-extralight tracking-tightest text-6xl sm:text-7xl mb-8;
+  // }
+  // h2 {
+  //   @apply font-heading font-extralight tracking-tight text-4xl sm:text-5xl;
+  // }
+  // h3 {
+  //   @apply font-heading font-extralight tracking-tight text-4xl;
+  // }
+  // h4 {
+  //   @apply font-heading font-extralight tracking-tight text-3xl;
+  // }
+  // h5 {
+  //   @apply font-heading font-extralight tracking-tight text-2xl;
+  // }
+  // h6 {
+  //   @apply font-heading font-extralight tracking-tight text-xl;
+  // }
+  // small {
+  //   @apply text-gray-500;
+  // }
+
+  // h1 {
+  //   @apply font-normal text-6xl mb-8 tracking-tightest;
+  // }
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6 {
+  //   @apply font-extralight tracking-tight;
+  // }
+  // h2 {
+  //   @apply text-5xl;
+  // }
+  // h3 {
+  //   @apply text-4xl;
+  // }
+  // h4,
+  // h5,
+  // h6 {
+  //   @apply text-3xl;
+  // }
+  // strong,
+  // bold {
+  //   @apply font-extrabold;
+  // }
+  // p {
+  //   @apply leading-tight;
+  // }
 }

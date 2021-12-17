@@ -1,5 +1,5 @@
 .main {
-  @apply justify-items-start px-4 items-start flex z-100 flex-grow w-full;
+  @apply justify-items-start px-4 items-start flex z-100 flex-auto w-full;
   ul {
     @apply flex flex-col items-start justify-start py-4;
     li {

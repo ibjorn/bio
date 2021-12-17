@@ -6,23 +6,23 @@ import styles from './offCanvasMenu.module.scss'
 import OffCanvasNav from './offCanvasNav'
 
 const OffCanvasMenu = ({ nav }) => {
-  const { handleBurgerMenuClick } = useContext(OffCanvasContext)
+  const { isOpen, handleBurgerMenuClick } = useContext(OffCanvasContext)
 
   return (
-    <>
-      <div className={styles.wrapper}>
-        <div className={styles.hamburger}>
-          <HamburgerMenuButton />
-        </div>
-        <OffCanvasNav
-          nav={nav}
-          onClick={() => {
-            handleBurgerMenuClick()
-          }}
-        />
-        <SocialIcons />
+    <div
+      className={`${isOpen ? styles.open : styles.closed} ${styles.wrapper}`}
+    >
+      <div className={styles.hamburger}>
+        <HamburgerMenuButton />
       </div>
-    </>
+      <OffCanvasNav
+        nav={nav}
+        onClick={() => {
+          handleBurgerMenuClick()
+        }}
+      />
+      <SocialIcons />
+    </div>
   )
 }
 

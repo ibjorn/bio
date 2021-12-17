@@ -1,45 +1,54 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-  mode: 'jit',
-  purge: [
-    // Use *.tsx if using TypeScript
-    './components/alert/**/*.js',
-    './components/backHomeLink/**/*.js',
-    './components/footer/**/*.js',
-    './components/header/**/*.js',
-    './components/icons/**/*.js',
-    './components/layouts/**/*.js',
-    './components/nav/**/*.js',
-    './components/offCanvas/**/*.js',
-    './components/pageTitle/**/*.js',
-    './components/social/**/*.js',
-    './components/**/*.js',
-    './pages/**/*.js'
+  presets: [
+    require('./theme/preset-colors.js'),
+    require('./theme/preset-typography')
   ],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    // Use *.tsx if using TypeScript
+    './components/**/*.js',
+    './pages/**/*.js',
+    './theme/**/*.js'
+  ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: '#1E293B',
-      white: '#ffffff',
-      gray: colors.trueGray,
-      blue: colors.sky,
-      cyan: colors.cyan,
-      green: colors.green
+    fontFamily: {
+      sans: ['Lato', 'sans-serif'],
+      heading: ['Oswald', 'sans-serif']
     },
     extend: {
-      fontFamily: {
-        sans: ['Raleway', 'Oswald', ...defaultTheme.fontFamily.sans]
-      },
-      colors: {
-        primary: '#0891B2',
-        secondary: '#0EA5E9',
-        muted: '#737373',
-        success: '#4ADE80'
-      },
+      // typography: {
+      //   DEFAULT: {
+      //     css: {
+      //       h1: {
+      //         fontFamily: 'font-heading',
+      //         fontWeight: 'font-extralight',
+      //         letterSpacing: 'tracking-tightest',
+      //         fontSize: 'text-6xl',
+      //         marginBottom: '2rem',
+      //         '@screen sm': {
+      //           fontSize: '4.5rem'
+      //         }
+      //       }
+      // h2 {
+      //   @apply font-heading font-extralight tracking-tight text-4xl sm:text-5xl;
+      // }
+      // h3 {
+      //   @apply font-heading font-extralight tracking-tight text-4xl;
+      // }
+      // h4 {
+      //   @apply font-heading font-extralight tracking-tight text-3xl;
+      // }
+      // h5 {
+      //   @apply font-heading font-extralight tracking-tight text-2xl;
+      // }
+      // h6 {
+      //   @apply font-heading font-extralight tracking-tight text-xl;
+      // }
+      // small {
+      //   @apply text-gray-500;
+      // }
+      //     }
+      //   }
+      // },
       letterSpacing: {
         widerthan: '0.175em',
         widely: '0.077em',
@@ -67,11 +76,11 @@ module.exports = {
         pulse: 'pulse 1500ms ease-in-out 1 alternate'
       }
     }
-  },
-  variants: {
-    extend: {
-      animation: ['hover', 'group-hover']
-    }
-  },
-  plugins: [require('@tailwindcss/typography')]
+  }
+  // plugins: [require('@tailwindcss/typography')]
+  // variants: {
+  //   extend: {
+  //     animation: ['hover', 'group-hover']
+  //   }
+  // },
 }

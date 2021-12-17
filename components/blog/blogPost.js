@@ -1,12 +1,12 @@
-import utilStyles from '../../styles/utils.module.scss'
 import Date from '../date'
+import { article } from './blogPost.module.scss'
 
 const BlogPost = ({ title, date, content }) => {
   return (
-    <article>
+    <article className={article}>
       <h1>{title}</h1>
       <div>
-        <small className={utilStyles.lightText}>
+        <small>
           <Date dateString={date} />
         </small>
       </div>

@@ -1,11 +1,11 @@
 .wrapper {
-  @apply h-screen w-full absolute z-100 top-0 -right-full bg-primary flex flex-col items-center p-2 overflow-x-hidden lg:hidden transform transition-all duration-150 ease-out;
+  @apply flex flex-col items-center p-2 lg:hidden bg-primary shadow fixed w-0 h-screen top-0 right-0 overflow-x-hidden z-10 transform;
 }
 .closed {
-  @apply hidden;
+  @apply opacity-0 translate-x-full transition-all duration-300 ease-in;
 }
 .open {
-  @apply opacity-90 max-h-screen overflow-hidden;
+  @apply opacity-90 w-full translate-x-0 transition-transform duration-300 ease-out;
 }
 .hamburger {
   @apply flex justify-end w-full;

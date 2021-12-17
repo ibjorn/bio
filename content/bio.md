@@ -1,5 +1,5 @@
 ---
-title: 'Web Developer Over Here...'
+title: 'Web Developer Here...'
 description: 'A short bio about my career as a web developer'
 keywords: 'web developer, web designer, self-taught web developer, black alsatian'
 date: '2021-12-08'

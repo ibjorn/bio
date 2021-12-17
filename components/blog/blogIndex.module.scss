@@ -1,6 +1,6 @@
 .wrapper {
-  @apply mt-12;
-  .mainHeading {
-    @apply mb-12;
+  @apply pt-12;
+  article {
+    @apply prose;
   }
 }

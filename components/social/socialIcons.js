@@ -38,7 +38,7 @@ function SocialIcons({ desktopOnly, dark }) {
         </motion.li>
       )
     })
-  }, [])
+  }, [dark])
 
   return (
     <div
