@@ -1,9 +1,11 @@
 .header {
   @apply flex flex-row justify-between items-start md:items-center w-full p-2 md:p-5;
 }
+
 .overlaySite {
   @apply absolute top-0 left-0 right-0 z-70;
 }
+
 .left {
   // @apply animate-none hover:animate-pulse flex flex-shrink flex-col items-start md:items-center justify-center cursor-pointer max-w-min md:max-w-max;
   @apply flex flex-shrink flex-col items-start md:items-center justify-center cursor-pointer max-w-min md:max-w-max;
@@ -11,6 +13,7 @@
 
 .right {
   @apply flex-shrink-0 md:flex-auto flex flex-row items-start justify-end;
+
   span {
     @apply sr-only;
   }

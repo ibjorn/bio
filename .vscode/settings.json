@@ -3,6 +3,8 @@
     "source.fixAll": true,
     "source.organizeImports": true,
     "source.addMissingImports": true,
+    "source.fixAll.stylelint": true,
     "source.fixAll.eslint": true
-  }
+  },
+  "stylelint.validate": ["css", "scss", ".module.scss", "postcss"]
 }

@@ -1,11 +1,14 @@
 .hamburgerButton {
   @apply flex flex-col items-center justify-center w-10 h-10 p-0 m-0 cursor-pointer z-50 lg:hidden;
 }
+
 .hamburgerLine {
   @apply h-1 w-10 my-1 rounded-full transition-all ease-in duration-150 transform;
+
   &.lightColors {
     @apply bg-white filter drop-shadow-lg;
   }
+
   &.darkColors {
     @apply bg-black filter-none drop-shadow-none;
   }

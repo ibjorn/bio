@@ -1,14 +1,18 @@
 .main {
   @apply justify-items-end px-4 items-center hidden lg:flex text-sm uppercase;
+
   ul {
     @apply flex items-center justify-between py-4 mx-auto;
+
     li {
       @apply flex justify-between px-2;
+
       a {
         &.externalLink {
           @apply mr-1;
         }
       }
+
       // a {
       //   @apply no-underline transition ease-in duration-300 border-b border-transparent;
       //   &:hover {
@@ -20,20 +24,25 @@
 }
 
 .inActive {
-  @apply no-underline hover:no-underline hover:border-b hover:border-transparent;
+  @apply no-underline hover:no-underline hover:border-b hover:border-transparent #{!important};
+
   &.lightColors {
-    @apply text-white filter contrast-150 drop-shadow-xl;
+    @apply border-white text-white filter contrast-150 drop-shadow-xl #{!important};
   }
+
   &.darkColors {
-    @apply text-black filter-none contrast-0 drop-shadow-none;
+    @apply border-black text-black filter-none contrast-0 drop-shadow-none #{!important};
   }
 }
+
 .active {
-  @apply no-underline transition ease-in duration-150 border-b hover:border-transparent;
+  @apply no-underline transition ease-in duration-150 border-b #{!important};
+
   &.lightColors {
-    @apply text-white border-white hover:filter hover:drop-shadow-sm;
+    @apply text-white border-white hover:border-transparent hover:filter hover:drop-shadow-sm #{!important};
   }
+
   &.darkColors {
-    @apply text-black border-black hover:filter-none hover:drop-shadow-none;
+    @apply text-black border-black hover:border-transparent hover:filter-none hover:drop-shadow-none #{!important};
   }
 }

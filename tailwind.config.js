@@ -1,7 +1,7 @@
 module.exports = {
   presets: [
     require('./theme/preset-colors.js'),
-    require('./theme/preset-typography')
+    require('./theme/preset-typography.js')
   ],
   content: [
     // Use *.tsx if using TypeScript
@@ -10,11 +10,11 @@ module.exports = {
     './theme/**/*.js'
   ],
   theme: {
-    fontFamily: {
-      sans: ['Lato', 'sans-serif'],
-      heading: ['Oswald', 'sans-serif']
-    },
     extend: {
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+        heading: ['Oswald', 'sans-serif']
+      },
       // typography: {
       //   DEFAULT: {
       //     css: {
@@ -76,8 +76,8 @@ module.exports = {
         pulse: 'pulse 1500ms ease-in-out 1 alternate'
       }
     }
-  }
-  // plugins: [require('@tailwindcss/typography')]
+  },
+  plugins: [require('@tailwindcss/typography')]
   // variants: {
   //   extend: {
   //     animation: ['hover', 'group-hover']

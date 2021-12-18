@@ -1,33 +1,15 @@
 .wrapper {
   @apply w-full min-h-screen relative flex flex-col p-0 bg-white content-between;
 }
+
 .main {
   @apply flex flex-col flex-auto w-full;
 }
+
 .section {
   @apply w-full m-0 py-28 lg:py-32 px-0;
 }
+
 .containerWrap {
   @apply container mx-auto px-6 md:px-32;
-  article {
-    @apply prose text-black;
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    a {
-      @apply text-black;
-    }
-    a {
-      @apply text-black font-extrabold no-underline transition ease-in duration-150 border-b border-black;
-      &:hover {
-        @apply no-underline border-b border-transparent;
-      }
-    }
-    strong,
-    bold {
-      @apply font-extrabold;
-    }
-  }
 }

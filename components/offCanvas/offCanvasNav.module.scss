@@ -1,9 +1,12 @@
 .main {
   @apply justify-items-start px-4 items-start flex z-100 flex-auto w-full;
+
   ul {
     @apply flex flex-col items-start justify-start py-4;
+
     li {
       @apply flex justify-between px-2;
+
       a {
         @apply font-extrabold no-underline hover:underline text-3xl text-white transition-colors duration-150 ease-in-out;
       }
@@ -12,9 +15,10 @@
 }
 
 .inActiveOffCanvas {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   @apply no-underline text-primary hover:text-secondary text-3xl;
 }
+
 .activeOffCanvas {
   @apply text-secondary hover:text-primary;
 }

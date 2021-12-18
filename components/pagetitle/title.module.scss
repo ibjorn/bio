@@ -1,22 +1,28 @@
 .spanCase {
   @apply lowercase;
 }
+
 .heading {
-  font-family: 'Oswald', sans-serif;
-  @apply text-3xl md:text-4xl font-normal uppercase tracking-wide md:tracking-widely text-justify block leading-none mb-0;
+  font-family: Oswald, sans-serif;
+  @apply text-3xl md:text-4xl font-normal uppercase tracking-tight md:tracking-wider text-justify block leading-none mb-0 #{!important};
+
   &.lightColors {
     @apply text-white filter drop-shadow-lg;
   }
+
   &.darkColors {
     @apply text-black filter-none drop-shadow-none;
   }
 }
+
 .paragraph {
-  font-family: 'Oswald', sans-serif;
-  @apply text-sm md:text-base uppercase md:text-justify tracking-normal md:tracking-tight md:block mt-px pt-px align-top leading-none font-extralight;
+  font-family: Oswald, sans-serif;
+  @apply text-sm md:text-base uppercase md:text-justify tracking-normal md:tracking-tight md:block mt-px pt-px align-top leading-none font-extralight #{!important};
+
   &.lightColors {
     @apply text-white border-t border-white;
   }
+
   &.darkColors {
     @apply text-black border-t border-black filter-none drop-shadow-none;
   }

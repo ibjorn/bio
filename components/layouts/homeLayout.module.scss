@@ -1,18 +1,11 @@
 .wrapper {
   @apply w-full max-h-screen relative flex flex-col p-0;
 }
+
 .main {
   @apply p-0 flex flex-auto flex-col justify-start items-center w-full;
-  h2 {
-    @apply text-2xl;
-  }
-  h3 {
-    @apply text-xl mt-4;
-  }
-  p {
-    @apply text-base;
-  }
 }
+
 .section {
   @apply absolute w-full m-0 p-0 h-screen;
 }
@@ -20,8 +13,10 @@
 .container {
   @apply w-full m-0 p-0 h-screen top-0;
 }
+
 .imgWrap {
   @apply relative top-0 w-full h-screen z-0 object-bottom md:object-top;
+
   // span {
   //   img {
   //     @apply object-cover;
@@ -30,11 +25,5 @@
 }
 
 .textOverlayContainer {
-  @apply flex flex-col justify-end absolute h-screen bg-blend-hue bg-opacity-50 z-50 w-full top-0 text-white p-5;
-  article {
-    h2,
-    h3 {
-      @apply text-white;
-    }
-  }
+  @apply flex flex-col justify-end absolute h-screen bg-blend-hue bg-opacity-50 z-50 w-full top-0 p-5;
 }
