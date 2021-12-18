@@ -16,7 +16,7 @@ export default function MainLayout({ children }) {
     pageAnimate: {
       opacity: 1,
       transition: {
-        duration: 0.3
+        duration: 0.5
       }
     },
     pageExit: {
