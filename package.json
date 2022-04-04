@@ -8,6 +8,7 @@
     "build": "next build",
     "clean": "rimraf .next/",
     "dev": "set NODE_OPTIONS='--inspect' && next dev",
+    "info": "next info",
     "lint": "next lint",
     "lint:style": "npx stylelint \"**/*.scss\"",
     "lint:style-fix": "npx stylelint \"**/*.scss\" --fix",
