@@ -78,9 +78,4 @@ module.exports = {
     }
   },
   plugins: [require('@tailwindcss/typography')]
-  // variants: {
-  //   extend: {
-  //     animation: ['hover', 'group-hover']
-  //   }
-  // },
 }
