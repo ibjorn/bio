@@ -10,7 +10,7 @@ Since my introduction to the internet in 1993 by a school friend I was hooked.
 
 I guess my curiosity since childhood with trying to understand what made things work by taking them apart is what lead me on my journey to becoming a self-taught web developer.
 
-In 2003 the opportunity presented itself for me to start my own company, [Black Alsatian](http://www.blackalsatian.co.za 'A Web Development & Digital Marketing Consultancy'), as a freelance graphic and web designer.
+In 2003 the opportunity presented itself for me to start my own company, [Black Alsatian](https://www.blackalsatian.co.za 'A Web Development & Digital Marketing Consultancy'), as a freelance graphic and web designer.
 
 At this present day Black Alsatian now consists of a small team of 3 people. Together we specialise in both web development and online marketing.
 
