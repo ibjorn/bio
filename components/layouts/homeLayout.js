@@ -6,35 +6,32 @@ import {
   section,
   textOverlayContainer
 } from './homeLayout.module.scss'
+import Layout from './layout'
 
 const HomeLayout = ({ children }) => {
   return (
-    // <div className={wrapper}>
-    //   <Header home overlay />
-    //   <main className={main}>
-    <section className={section}>
-      <div className={container}>
-        <div className={imgWrap}>
-          <Image
-            src={homeCoverPic}
-            alt='In-between moments'
-            priority
-            layout='fill'
-            objectFit='cover'
-            quality={80}
-            // width={500} automatically provided
-            // height={500} automatically provided
-            // blurDataURL='data:...' // automatically provided
-            // blurDataURL='/images/placeholder.png'
-            // placeholder='blur' // Optional blur-up while loading
-          />
+    <Layout>
+      <section className={section}>
+        <div className={container}>
+          <div className={imgWrap}>
+            <Image
+              src={homeCoverPic}
+              alt='In-between moments'
+              priority
+              layout='fill'
+              objectFit='cover'
+              quality={80}
+              // width={500} automatically provided
+              // height={500} automatically provided
+              // blurDataURL='data:...' // automatically provided
+              // blurDataURL='/images/placeholder.png'
+              // placeholder='blur' // Optional blur-up while loading
+            />
+          </div>
+          <div className={textOverlayContainer}>{children}</div>
         </div>
-        <div className={textOverlayContainer}>{children}</div>
-      </div>
-    </section>
-    //   </main>
-    //   <Footer home />
-    // </div>
+      </section>
+    </Layout>
   )
 }
 

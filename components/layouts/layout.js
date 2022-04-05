@@ -6,7 +6,7 @@ import styles from './layout.module.scss'
 
 const OffCanvasMenu = dynamic(() => import('../offCanvas/offCanvasMenu'))
 
-export default function Layout({ children, isBlogPage, key }) {
+export default function Layout({ children }) {
   const { isOpen } = useContext(OffCanvasContext)
 
   const animVariants = {
@@ -23,7 +23,7 @@ export default function Layout({ children, isBlogPage, key }) {
     pageExit: {
       opacity: 0,
       transition: {
-        duration: 0.8
+        duration: 0.1
         // delay: 0.1,
         // type: 'spring',
         // stiffness: 10
@@ -32,14 +32,12 @@ export default function Layout({ children, isBlogPage, key }) {
   }
   return (
     <motion.main
-      key={key}
+      // key={key}
       initial='pageInitial'
       animate='pageAnimate'
       exit='pageExit'
       variants={animVariants}
-      className={`${styles.wrapper} ${
-        isBlogPage ? styles.blog : styles.regularBg
-      }`}
+      className={`${styles.wrapper}`}
     >
       <OffCanvasMenu />
       <div className={`${styles.container} ${isOpen === styles.isOpen}`}>

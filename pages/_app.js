@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { useEffect } from 'react'
 import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
-import Layout from '../components/layouts/layout'
+// import Layout from '../components/layouts/layout'
 import { GTM_ID, pageview } from '../lib/gtm'
 import OffCanvasProvider from '../store/offCanvasProvider'
 import '../styles/global.scss'
@@ -49,9 +49,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             initial={!isHomePage}
             onExitComplete={() => window.scrollTo(0, 0)}
           >
-            <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
-              <Component {...pageProps} />
-            </Layout>
+            {/* {isVisible && ( */}
+            {/* <Layout key={router.route} dark={isBlogPage || isNotFoundPage}> */}
+            <Component
+              {...pageProps}
+              key={router.route}
+              // dark={isBlogPage || isNotFoundPage}
+            />
+            {/* </Layout> */}
+            {/* )} */}
           </AnimatePresence>
         </LazyMotion>
         <Footer home={isHomePage} dark={isBlogPage || isNotFoundPage} />
