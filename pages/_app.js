@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Header home={isHomePage} dark={isBlogPage || isNotFoundPage} />
         <AnimatePresence
           exitBeforeEnter
-          initial={isHomePage}
+          initial={!isHomePage}
           onExitComplete={() => window.scrollTo(0, 0)}
         >
           <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
