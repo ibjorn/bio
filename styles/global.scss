@@ -29,7 +29,15 @@
   }
 
   body {
-    @apply min-h-screen antialiased bg-primary;
+    @apply min-h-screen antialiased;
+  }
+
+  .mainWrap {
+    @apply flex flex-col h-full min-h-screen bg-primary;
+  }
+
+  .whiteBg {
+    @apply bg-white;
   }
 
   h1,

@@ -1,13 +1,13 @@
-.wrapper {
-  @apply w-full h-full relative flex flex-col p-0 bg-secondary overflow-y-auto;
-}
+// .wrapper {
+//   @apply w-full h-full relative flex flex-col p-0 bg-secondary overflow-y-auto;
+// }
 
-.main {
-  @apply flex flex-col w-full;
-}
+// .main {
+//   @apply flex flex-col w-full;
+// }
 
 .section {
-  @apply w-full m-0 py-32 px-0 opacity-100 transition-opacity ease-in duration-500;
+  @apply w-full m-0 pt-64 pb-32 px-0 opacity-100 transition-opacity ease-in duration-500;
 }
 
 .containerWrap {

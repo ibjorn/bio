@@ -1,9 +1,17 @@
 .header {
-  @apply flex flex-row justify-between items-start md:items-center w-full p-2 md:p-5;
+  @apply fixed top-0 z-70 flex flex-row justify-between items-start md:items-center w-full p-2 md:p-5 border-b transition-colors ease-in-out duration-300 bg-primary border-b-white;
+}
+
+.transparentMenu {
+  @apply bg-transparent border-b-0;
+}
+
+.darkMenu {
+  @apply bg-white border-b-black;
 }
 
 .overlaySite {
-  @apply absolute top-0 left-0 right-0 z-70;
+  @apply fixed top-0 z-70;
 }
 
 .left {

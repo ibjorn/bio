@@ -1,19 +1,48 @@
-import Footer from '../footer/footer'
-import Header from '../header/header'
-import { containerWrap, main, section, wrapper } from './layout.module.scss'
+import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
+import { useContext } from 'react'
+import { OffCanvasContext } from '../../store/offCanvasProvider'
+import styles from './layout.module.scss'
 
-const Layout = ({ children }) => {
+const OffCanvasMenu = dynamic(() => import('../offCanvas/offCanvasMenu'))
+
+export default function Layout({ children, isBlogPage }) {
+  const { isOpen } = useContext(OffCanvasContext)
+
+  const animVariants = {
+    pageInitial: {
+      opacity: 0
+    },
+    pageAnimate: {
+      opacity: [0.1, 0.4, 0.8, 1],
+      transition: {
+        duration: 0.3,
+        type: 'spring',
+        stiffness: 10
+      }
+    },
+    pageExit: {
+      opacity: [0.6, 0.3, 0.2, 0],
+      transition: {
+        duration: 0.2,
+        // delay: 0.1,
+        type: 'spring',
+        stiffness: 100
+      }
+    }
+  }
   return (
-    <div className={wrapper}>
-      <Header />
-      <main className={main}>
-        <section className={section}>
-          <div className={containerWrap}>{children}</div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <motion.main
+      initial='pageInitial'
+      animate='pageAnimate'
+      exit='pageExit'
+      variants={animVariants}
+      className={`${styles.wrapper} ${isBlogPage && styles.blog}`}
+    >
+      <OffCanvasMenu />
+      <div className={`${styles.container} ${isOpen === styles.isOpen}`}>
+        {children}
+      </div>
+    </motion.main>
   )
 }
-
-export default Layout

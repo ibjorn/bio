@@ -1,15 +1,15 @@
 .bio {
-  @apply prose;
+  @apply prose prose-headings:text-white prose-a:text-white prose-p:text-white prose-ul:text-white prose-li:text-white;
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a {
-    @apply text-white;
-  }
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // a {
+  //   @apply text-white;
+  // }
 
   a {
     &:hover {

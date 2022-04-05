@@ -37,7 +37,11 @@ const MainNav = ({ dark }) => {
                   >
                     {item.label}
                   </a>
-                  <ExternalIcon width={14} height={14} />
+                  <ExternalIcon
+                    width={14}
+                    height={14}
+                    color={dark ? '#000000' : '#ffffff'}
+                  />
                 </>
               )}
             </li>

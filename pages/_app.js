@@ -1,10 +1,13 @@
 import { AnimatePresence } from 'framer-motion'
 import Script from 'next/script'
 import { useEffect } from 'react'
-import MainLayout from '../components/layouts/mainLayout'
+import Footer from '../components/footer/footer'
+import Header from '../components/header/header'
+import Layout from '../components/layouts/layout'
 import { GTM_ID, pageview } from '../lib/gtm'
 import OffCanvasProvider from '../store/offCanvasProvider'
 import '../styles/global.scss'
+// import { mainWrap, whiteBg } from '../styles/global.scss'
 import { dev } from '../utils/helpers'
 
 export default function App({ Component, pageProps, router }) {
@@ -17,7 +20,9 @@ export default function App({ Component, pageProps, router }) {
 
   const getLayout = Component.getLayout || (page => page)
   const useLayout = getLayout(<Component {...pageProps} />)
-  const isHomePage = router.route !== '/'
+  const isHomePage = router.route === '/'
+  const isBlogPage = router.route.includes('/blog')
+  const isNotFoundPage = router.route.includes('/404')
 
   return (
     <OffCanvasProvider>
@@ -36,9 +41,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
       )}
-      <AnimatePresence initial={isHomePage}>
-        <MainLayout key={router.route}>{useLayout}</MainLayout>
-      </AnimatePresence>
+      <div className={`${'mainWrap'} ${isBlogPage ? 'whiteBg' : ''}`}>
+        <Header home={isHomePage} dark={isBlogPage || isNotFoundPage} />
+        <AnimatePresence
+          exitBeforeEnter
+          initial={isHomePage}
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
+            {useLayout}
+          </Layout>
+        </AnimatePresence>
+        <Footer home={isHomePage} dark={isBlogPage || isNotFoundPage} />
+      </div>
     </OffCanvasProvider>
   )
 }

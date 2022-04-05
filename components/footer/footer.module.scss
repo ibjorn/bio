@@ -1,3 +1,11 @@
 .footer {
-  @apply relative flex items-end justify-end w-full p-2 md:p-4;
+  @apply flex items-end justify-end w-full p-2 md:p-4 bg-transparent;
+}
+
+.darkFooter {
+  @apply bg-white;
+}
+
+.sticky {
+  @apply absolute bottom-0;
 }

@@ -31,7 +31,7 @@ module.exports = {
                 }
               },
               h3: {
-                fontWeight: '400',
+                fontWeight: '200',
                 letterSpacing: '0.025em',
                 fontSize: '2.25rem',
                 lineHeight: '2.5rem'

@@ -3,24 +3,42 @@ import MainNav from '../nav/mainNav'
 import HamburgerMenuButton from '../offCanvas/hamburgerMenuButton'
 import Title from '../pagetitle/title'
 import SocialIcons from '../social/socialIcons'
-import { header, left, overlaySite, right } from './header.module.scss'
+import {
+  darkMenu,
+  header,
+  left,
+  overlaySite,
+  right,
+  transparentMenu
+} from './header.module.scss'
 
 const Header = ({ home, overlay, dark }) => {
   const variants = {
     hidden: {
-      scale: 0.8,
-      opacity: 0.3
+      // scale: 0.8,
+      opacity: 0
     },
     visible: {
-      scale: 1,
-      opacity: 1,
+      // scale: 1,
+      opacity: [0.2, 0.7, 0.9, 1],
       transition: {
-        duration: 0.1
+        duration: 3
       }
     }
   }
+
+  //   const stickyPosition = useScrollPosition()
+  //
+  //   const isSticky = () => {
+  //     return stickyPosition === 0 ? true : false
+  //   }
+
   return (
-    <header className={`${header} ${overlay && overlaySite}`}>
+    <header
+      className={`${header} ${home && transparentMenu} ${dark && darkMenu} ${
+        overlay && overlaySite
+      }`}
+    >
       <motion.div
         className={left}
         initial='hidden'

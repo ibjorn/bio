@@ -1,18 +1,18 @@
 .home {
-  @apply prose;
+  @apply prose prose prose-headings:text-white prose-a:text-white prose-p:text-white prose-ul:text-white prose-li:text-white;
 
   // h2 {
   //   @apply prose-h2:text-white;
   // }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  a {
-    @apply text-white;
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // p,
+  // a {
+  //   @apply text-white;
+  // }
 
   h2,
   h3 {

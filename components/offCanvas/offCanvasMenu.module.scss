@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col items-center p-2 lg:hidden bg-primary shadow fixed w-0 h-screen top-0 right-0 overflow-x-hidden z-10 transform;
+  @apply flex flex-col items-center p-2 lg:hidden bg-primary shadow fixed w-0 h-screen top-0 right-0 overflow-x-hidden z-90 transform;
 }
 
 .closed {
