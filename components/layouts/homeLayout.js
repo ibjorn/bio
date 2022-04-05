@@ -18,7 +18,7 @@ const HomeLayout = ({ children }) => {
           <Image
             src={homeCoverPic}
             alt='In-between moments'
-            priority={true}
+            priority
             layout='fill'
             objectFit='cover'
             quality={80}
