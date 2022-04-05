@@ -6,7 +6,7 @@ import styles from './layout.module.scss'
 
 const OffCanvasMenu = dynamic(() => import('../offCanvas/offCanvasMenu'))
 
-export default function Layout({ children, isBlogPage }) {
+export default function Layout({ children, isBlogPage, key }) {
   const { isOpen } = useContext(OffCanvasContext)
 
   const animVariants = {
@@ -32,6 +32,7 @@ export default function Layout({ children, isBlogPage }) {
   }
   return (
     <motion.main
+      key={key}
       initial='pageInitial'
       animate='pageAnimate'
       exit='pageExit'
