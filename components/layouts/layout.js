@@ -37,11 +37,12 @@ export default function Layout({ children }) {
       animate='pageAnimate'
       exit='pageExit'
       variants={animVariants}
-      className={`${styles.wrapper}`}
     >
-      <OffCanvasMenu />
-      <div className={`${styles.container} ${isOpen === styles.isOpen}`}>
-        {children}
+      <div className={`${styles.wrapper}`}>
+        <OffCanvasMenu />
+        <div className={`${styles.container} ${isOpen === styles.isOpen}`}>
+          {children}
+        </div>
       </div>
     </motion.main>
   )
