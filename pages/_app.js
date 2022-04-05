@@ -1,4 +1,4 @@
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence, domAnimation, LazyMotion } from 'framer-motion'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import Footer from '../components/footer/footer'
@@ -43,15 +43,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       )}
       <div className={`${'mainWrap'} ${isBlogPage ? 'whiteBg' : ''}`}>
         <Header home={isHomePage} dark={isBlogPage || isNotFoundPage} />
-        <AnimatePresence
-          exitBeforeEnter
-          initial={!isHomePage}
-          onExitComplete={() => window.scrollTo(0, 0)}
-        >
-          <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
-            <Component {...pageProps} />
-          </Layout>
-        </AnimatePresence>
+        <LazyMotion features={domAnimation}>
+          <AnimatePresence
+            exitBeforeEnter
+            initial={!isHomePage}
+            onExitComplete={() => window.scrollTo(0, 0)}
+          >
+            <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
+              <Component {...pageProps} />
+            </Layout>
+          </AnimatePresence>
+        </LazyMotion>
         <Footer home={isHomePage} dark={isBlogPage || isNotFoundPage} />
       </div>
     </OffCanvasProvider>
