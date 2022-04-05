@@ -78,7 +78,7 @@ module.exports = {
       },
       animation: {
         pulse: 'pulse 1500ms ease-in-out 1 alternate',
-        fade: 'fadeOut 1200ms ease-in-out'
+        fade: 'fadeOut 500ms ease-in-out'
       }
     }
   },
