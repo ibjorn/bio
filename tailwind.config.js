@@ -70,10 +70,15 @@ module.exports = {
           '50%': {
             opacity: 0.8
           }
+        },
+        fadeOut: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
         }
       },
       animation: {
-        pulse: 'pulse 1500ms ease-in-out 1 alternate'
+        pulse: 'pulse 1500ms ease-in-out 1 alternate',
+        fade: 'fadeOut 1200ms ease-in-out'
       }
     }
   },

@@ -24,7 +24,7 @@ export default function Layout({ children, isBlogPage }) {
     pageExit: {
       opacity: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.7,
         // delay: 0.1,
         type: 'spring',
         stiffness: 100
@@ -37,7 +37,9 @@ export default function Layout({ children, isBlogPage }) {
       animate='pageAnimate'
       exit='pageExit'
       variants={animVariants}
-      className={`${styles.wrapper} ${isBlogPage && styles.blog}`}
+      className={`${styles.wrapper} ${
+        isBlogPage ? styles.blog : styles.regularBg
+      }`}
     >
       <OffCanvasMenu />
       <div className={`${styles.container} ${isOpen === styles.isOpen}`}>

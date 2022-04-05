@@ -1,7 +1,7 @@
 .wrapper {
   // @apply w-full min-h-screen overflow-hidden p-0 transform translate-x-0 transition-all duration-150 ease-in bg-primary;
   // @apply bg-primary;
-  @apply relative bg-primary;
+  @apply relative;
 
   .container {
     // @apply w-full mx-auto px-0 transform duration-300 ease-out lg:translate-x-0;
@@ -13,6 +13,10 @@
       @apply -translate-x-full;
     }
   }
+}
+
+.regularBg {
+  @apply bg-primary;
 }
 
 .blog {
