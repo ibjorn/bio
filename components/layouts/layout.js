@@ -27,7 +27,7 @@ export default function Layout({ children, isBlogPage }) {
         duration: 0.7,
         // delay: 0.1,
         type: 'spring',
-        stiffness: 100
+        stiffness: 10
       }
     }
   }
