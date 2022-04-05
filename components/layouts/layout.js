@@ -14,17 +14,17 @@ export default function Layout({ children, isBlogPage }) {
       opacity: 0
     },
     pageAnimate: {
-      opacity: [0.1, 0.4, 0.8, 1],
+      opacity: 1,
       transition: {
-        duration: 0.3,
+        duration: 0.7,
         type: 'spring',
         stiffness: 10
       }
     },
     pageExit: {
-      opacity: [0.6, 0.3, 0.2, 0],
+      opacity: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.5,
         // delay: 0.1,
         type: 'spring',
         stiffness: 100
