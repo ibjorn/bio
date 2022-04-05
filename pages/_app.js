@@ -18,8 +18,8 @@ export default function App({ Component, pageProps, router }) {
     }
   }, [router.events])
 
-  const getLayout = Component.getLayout || (page => page)
-  const useLayout = getLayout(<Component {...pageProps} />)
+  // const getLayout = Component.getLayout || (page => page)
+  // const useLayout = getLayout(<Component {...pageProps} />)
   const isHomePage = router.route === '/'
   const isBlogPage = router.route.includes('/blog')
   const isNotFoundPage = router.route.includes('/404')
@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           onExitComplete={() => window.scrollTo(0, 0)}
         >
           <Layout key={router.route} dark={isBlogPage || isNotFoundPage}>
-            {useLayout}
+            <Component {...pageProps} />
           </Layout>
         </AnimatePresence>
         <Footer home={isHomePage} dark={isBlogPage || isNotFoundPage} />
