@@ -16,18 +16,17 @@ export default function Layout({ children, isBlogPage }) {
     pageAnimate: {
       opacity: 1,
       transition: {
-        duration: 0.7,
-        type: 'spring',
-        stiffness: 10
+        duration: 0.7
+        // type: 'spring',
       }
     },
     pageExit: {
       opacity: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.8
         // delay: 0.1,
-        type: 'spring',
-        stiffness: 10
+        // type: 'spring',
+        // stiffness: 10
       }
     }
   }
