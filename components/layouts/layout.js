@@ -16,23 +16,21 @@ export default function Layout({ children }) {
     pageAnimate: {
       opacity: 1,
       transition: {
-        duration: 0.7
-        // type: 'spring',
+        duration: 0.7,
+        type: 'spring',
+        stiffness: 60
       }
     },
     pageExit: {
       opacity: 0,
       transition: {
-        duration: 0.1
-        // delay: 0.1,
-        // type: 'spring',
-        // stiffness: 10
+        duration: 0.3,
+        delay: 0.1
       }
     }
   }
   return (
     <motion.main
-      // key={key}
       initial='pageInitial'
       animate='pageAnimate'
       exit='pageExit'

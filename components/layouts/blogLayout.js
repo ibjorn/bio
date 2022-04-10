@@ -1,10 +1,10 @@
-import { containerWrap, section } from './blogLayout.module.scss'
 import Layout from './layout'
+import { containerWrap, sectionWrap } from './layout.module.scss'
 
 const BlogLayout = ({ children }) => {
   return (
     <Layout>
-      <section className={section}>
+      <section className={sectionWrap}>
         <div className={containerWrap}>{children}</div>
       </section>
     </Layout>

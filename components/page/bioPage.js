@@ -1,8 +1,8 @@
-import styles from './bioPage.module.scss'
+import { bio } from '../layouts/layout.module.scss'
 
 const BioPage = ({ title, body }) => {
   return (
-    <article className={styles.bio}>
+    <article className={bio}>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: body }} />
     </article>

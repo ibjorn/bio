@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import homeCoverPic from '../../public/images/background/lounge.jpg'
+import Layout from './layout'
 import {
   container,
   imgWrap,
   section,
   textOverlayContainer
-} from './homeLayout.module.scss'
-import Layout from './layout'
+} from './layout.module.scss'
 
 const HomeLayout = ({ children }) => {
   return (
@@ -21,11 +21,6 @@ const HomeLayout = ({ children }) => {
               layout='fill'
               objectFit='cover'
               quality={80}
-              // width={500} automatically provided
-              // height={500} automatically provided
-              // blurDataURL='data:...' // automatically provided
-              // blurDataURL='/images/placeholder.png'
-              // placeholder='blur' // Optional blur-up while loading
             />
           </div>
           <div className={textOverlayContainer}>{children}</div>

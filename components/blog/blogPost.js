@@ -1,9 +1,9 @@
 import Date from '../date'
-import { article } from './blogPost.module.scss'
+import { blogPost } from '../layouts/layout.module.scss'
 
 const BlogPost = ({ title, date, content }) => {
   return (
-    <article className={article}>
+    <article className={blogPost}>
       <h1>{title}</h1>
       <div>
         <small>
