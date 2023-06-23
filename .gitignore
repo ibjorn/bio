@@ -33,3 +33,9 @@ yarn-error.log*
 
 # notes
 /.bak/
+
+# Docker 
+.devcontainer/
+docker-compose*.yml
+Dockerfile
+.dockerignore
