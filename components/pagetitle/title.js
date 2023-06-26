@@ -19,14 +19,14 @@ const Title = ({ isHome, dark }) => {
   )
   const tagline = 'Web Developer | Code Tinkerer | Bonsai Master'
   return (
-    <Link href='/'>
-      <a>
-        {title}
-        <p className={`${paragraph} ${dark ? darkColors : lightColors}`}>
-          {tagline}
-        </p>
-      </a>
-    </Link>
-  )
+    (<Link href='/'>
+
+      {title}
+      <p className={`${paragraph} ${dark ? darkColors : lightColors}`}>
+        {tagline}
+      </p>
+
+    </Link>)
+  );
 }
 export default Title

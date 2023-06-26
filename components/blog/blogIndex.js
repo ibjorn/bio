@@ -11,7 +11,7 @@ export default function BlogIndex({ posts }) {
         <article key={id} className={blogIntro}>
           <h2>
             <Link href={`/blog/${id}/`}>
-              <a>{title}</a>
+              {title}
             </Link>
           </h2>
           <small>
@@ -21,5 +21,5 @@ export default function BlogIndex({ posts }) {
         </article>
       ))}
     </div>
-  )
+  );
 }
