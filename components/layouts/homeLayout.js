@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import homeCoverPic from '../../public/images/background/lounge.jpg'
 import Layout from './layout'
 import {
