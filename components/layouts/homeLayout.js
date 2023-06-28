@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 import homeCoverPic from '../../public/images/background/lounge.jpg'
 import Layout from './layout'
 import {
@@ -18,18 +18,19 @@ const HomeLayout = ({ children }) => {
               src={homeCoverPic}
               alt='In-between moments'
               priority
-              quality={80}
+              quality={90}
               fill
-              sizes="100vw"
+              sizes='100vw'
               style={{
-                objectFit: "cover"
-              }} />
+                objectFit: 'cover'
+              }}
+            />
           </div>
           <div className={textOverlayContainer}>{children}</div>
         </div>
       </section>
     </Layout>
-  );
+  )
 }
 
 export default HomeLayout

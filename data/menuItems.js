@@ -19,12 +19,12 @@ export const menuItems = [
     path: '/blog/',
     altTitle: 'Web developer ramblings',
     isInternal: true
+  },
+  {
+    id: 4,
+    label: 'Contact',
+    path: 'http://www.blackalsatian.co.za/contact/',
+    altTitle: 'Contact a web developer',
+    isInternal: false
   }
-  // {
-  //   id: 4,
-  //   label: 'Contact',
-  //   path: '/contact/',
-  //   altTitle: 'Find a web developer',
-  //   isInternal: true
-  // }
 ]

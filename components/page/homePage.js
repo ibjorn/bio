@@ -3,13 +3,13 @@ import styles from '../layouts/layout.module.scss'
 const HomePage = () => {
   return (
     <article className={styles.home}>
-      <h2>Web Developer Playground</h2>
+      {/* <h2>Status</h2>
+      <h4>Open for business</h4> */}
       <p>
-        Messing about with JavaScript and PHP frameworks, both frontend and
-        backend.
+        <em>Gqeberha (Port Elizabeth) Harbour, South Africa - by me</em>
       </p>
-      <h3>Current Playing with:</h3>
-      <p>Next.js, Laravel &amp; Headless WordPress</p>
+      {/* <h3>Current Playing with:</h3>
+      <p>Next.js, Laravel &amp; Headless WordPress</p> */}
     </article>
   )
 }
