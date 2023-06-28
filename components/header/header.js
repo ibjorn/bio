@@ -22,7 +22,7 @@ const Header = ({ home, overlay, dark }) => {
       // scale: 1,
       opacity: [0.2, 0.7, 0.9, 1],
       transition: {
-        duration: 3
+        duration: 2
       }
     }
   }
