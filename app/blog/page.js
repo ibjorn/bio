@@ -1,7 +1,7 @@
-import BlogIndex from '../components/blog/blogIndex'
-import BlogLayout from '../components/layouts/blogLayout'
-import Meta from '../components/meta'
-import { getSortedPostsData } from '../lib/posts'
+import BlogIndex from '../../components/blog/blogIndex'
+import BlogLayout from '../../components/layouts/blogLayout'
+import Meta from '../../components/meta'
+import { getSortedPostsData } from '../../lib/posts'
 
 export default function Blog(props) {
   const { allPostsData } = props

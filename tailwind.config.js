@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lato', 'sans-serif'],
-        heading: ['Oswald', 'sans-serif']
+        // sans: ['Lato', 'sans-serif'],
+        sans: ['var(--font-lato)'],
+        heading: ['var(--font-oswald)']
       },
       // typography: {
       //   DEFAULT: {

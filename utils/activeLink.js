@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router'
-import PropTypes from 'prop-types'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import PropTypes from 'prop-types'
 import React, { Children } from 'react'
 
 const ActiveLink = ({ children, activeClassName, ...props }) => {
@@ -22,7 +22,7 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
         className: className || null
       })}
     </Link>
-  );
+  )
 }
 
 ActiveLink.propTypes = {

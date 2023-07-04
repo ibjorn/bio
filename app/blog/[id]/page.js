@@ -1,7 +1,7 @@
-import BlogPost from '../../components/blog/blogPost'
-import BlogLayout from '../../components/layouts/blogLayout'
-import Meta from '../../components/meta'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import BlogPost from '../../../components/blog/blogPost'
+import BlogLayout from '../../../components/layouts/blogLayout'
+import Meta from '../../../components/meta'
+import { getAllPostIds, getPostData } from '../../../lib/posts'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)

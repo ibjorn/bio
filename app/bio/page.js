@@ -1,7 +1,7 @@
-import BioLayout from '../components/layouts/bioLayout'
-import Meta from '../components/meta'
-import BioPage from '../components/page/bioPage'
-import { getPageData } from '../lib/pages'
+import BioLayout from '../../components/layouts/bioLayout'
+import Meta from '../../components/meta'
+import BioPage from '../../components/page/bioPage'
+import { getPageData } from '../../lib/pages'
 
 export async function getStaticProps() {
   const pageData = await getPageData('bio')
