@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <Analytics />
           {/* </Suspense> */}
         </head>
-        <body>
+        <body suppressHydrationWarning={true}>
           {!dev && (
             <noscript>
               <iframe
