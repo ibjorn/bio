@@ -3,16 +3,17 @@ import Meta from '../../components/meta'
 import BioPage from '../../components/page/bioPage'
 import { getPageData } from '../../lib/pages'
 
-export async function getStaticProps() {
-  const pageData = await getPageData('bio')
-  return {
-    props: {
-      pageData
-    }
-  }
-}
+// export async function getStaticProps() {
+//   const pageData = await getPageData('bio')
+//   return {
+//     props: {
+//       pageData
+//     }
+//   }
+// }
 
-export default function Bio({ pageData }) {
+export default async function Bio() {
+  const pageData = await getPageData('bio')
   return (
     <>
       <Meta

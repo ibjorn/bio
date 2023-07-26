@@ -2,7 +2,7 @@
 
 import { AnimatePresence, domAnimation, LazyMotion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
-import Suspense from 'react'
+// import Suspense from 'react'
 import Analytics from '../components/analytics/analytics'
 import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
             crossOrigin='true'
           />
           <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
-          <Suspense>
-            <Analytics />
-          </Suspense>
+          {/* <Suspense> */}
+          <Analytics />
+          {/* </Suspense> */}
         </head>
         <body className={oswald.className}>
           {!dev && (
