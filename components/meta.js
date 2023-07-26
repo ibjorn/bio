@@ -2,13 +2,13 @@ import Head from 'next/head'
 import { siteMeta } from '../config'
 
 function Meta({
-  title,
-  description,
-  keywords,
+  title = siteMeta.siteName,
+  description = siteMeta.siteDescription,
+  keywords = siteMeta.siteKeywords,
   image,
   slug,
-  blogPost,
-  indexPage
+  blogPost = false,
+  indexPage = false
 }) {
   const canonicalUrl = `${siteMeta.siteUrl}/${
     slug && slug !== '/' ? slug + '/' : ''
@@ -50,14 +50,6 @@ function Meta({
       <meta name='twitter:creator' content={siteMeta.social.twitterAuthor} />
     </Head>
   )
-}
-
-Meta.defaultProps = {
-  title: siteMeta.siteName,
-  description: siteMeta.siteDescription,
-  keywords: siteMeta.siteKeywords,
-  blogPost: false,
-  indexPage: false
 }
 
 export default Meta
