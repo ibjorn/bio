@@ -12,7 +12,7 @@ import {
   transparentMenu
 } from './header.module.scss'
 
-const Header = ({ home, overlay, dark }) => {
+const Header = ({ home, overlay = false, dark = false }) => {
   const variants = {
     hidden: {
       // scale: 0.8,
@@ -55,10 +55,5 @@ const Header = ({ home, overlay, dark }) => {
       </div>
     </header>
   )
-}
-
-Header.defaultProps = {
-  overlay: false,
-  dark: false
 }
 export default Header

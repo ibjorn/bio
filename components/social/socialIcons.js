@@ -4,7 +4,7 @@ import { socialLinks } from './../../data/socialLinks'
 import iconMap from './iconsMap'
 import styles from './socialIcons.module.scss'
 
-function SocialIcons({ desktopOnly, dark }) {
+function SocialIcons({ desktopOnly = false, dark }) {
   const SocialIconComponent = useCallback(() => {
     return socialLinks.map(item => {
       const Icon = iconMap[item.label]
@@ -51,9 +51,5 @@ function SocialIcons({ desktopOnly, dark }) {
       </ul>
     </div>
   )
-}
-
-SocialIcons.defaultProps = {
-  desktopOnly: false
 }
 export default React.memo(SocialIcons)

@@ -10,7 +10,7 @@ import { GTM_ID } from '../lib/gtm'
 import OffCanvasProvider from '../store/offCanvasProvider'
 import '../styles/global.scss'
 import { dev } from '../utils/helpers'
-import { lato, oswald } from './fonts'
+import { lato } from './fonts'
 
 export default function RootLayout({ children }) {
   const pathname = usePathname()
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <Analytics />
           {/* </Suspense> */}
         </head>
-        <body className={oswald.className}>
+        <body>
           {!dev && (
             <noscript>
               <iframe
