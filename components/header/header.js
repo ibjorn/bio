@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import MainNav from '../nav/mainNav'
 import HamburgerMenuButton from '../offCanvas/hamburgerMenuButton'

@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 import React, { useCallback } from 'react'
 import { socialLinks } from './../../data/socialLinks'

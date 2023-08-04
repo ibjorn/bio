@@ -1,3 +1,5 @@
+'use client'
+
 const ExternalIcon = ({
   color = '#ffffff',
   width = '24',

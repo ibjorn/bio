@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import {
   darkColors,
@@ -19,14 +20,12 @@ const Title = ({ isHome, dark }) => {
   )
   const tagline = 'Web Developer | Code Tinkerer | Bonsai Master'
   return (
-    (<Link href='/'>
-
+    <Link href='/'>
       {title}
       <p className={`${paragraph} ${dark ? darkColors : lightColors}`}>
         {tagline}
       </p>
-
-    </Link>)
-  );
+    </Link>
+  )
 }
 export default Title

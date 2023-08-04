@@ -5,7 +5,7 @@ const HomePage = () => {
     <article className={styles.home}>
       {/* <h2>Status</h2>
       <h4>Open for business</h4> */}
-      <p>
+      <p className='small'>
         <em>Gqeberha (Port Elizabeth) Harbour, South Africa - by me</em>
       </p>
       {/* <h3>Current Playing with:</h3>

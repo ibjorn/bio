@@ -1,3 +1,5 @@
+'use client'
+import { lato } from '../../app/fonts'
 import ActiveLink from '../../utils/activeLink'
 import ExternalIcon from '../icons/externalIcon'
 import { menuItems } from './../../data/menuItems'
@@ -6,7 +8,7 @@ import styles from './mainNav.module.scss'
 const MainNav = ({ dark }) => {
   return (
     <nav className={styles.main}>
-      <ul>
+      <ul className={lato.className}>
         {menuItems.map(item => {
           return (
             <li key={item.id}>
