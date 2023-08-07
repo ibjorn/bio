@@ -13,6 +13,16 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  // "tailwindCSS.includeLanguages": {
+  //   "plaintext": "html"
+  // },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "scss": "css"
+  },
   "stylelint.validate": [
     "css",
     "scss",

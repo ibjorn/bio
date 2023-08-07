@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { useContext } from 'react'
 import { OffCanvasContext } from '../../store/offCanvasProvider'
-import styles from './layout.module.scss'
+// import styles from './layout.module.scss'
 
 const OffCanvasMenu = dynamic(() => import('../offCanvas/offCanvasMenu'))
 
@@ -37,11 +37,9 @@ export default function Layout({ children }) {
       exit='pageExit'
       variants={animVariants}
     >
-      <div className={`${styles.wrapper}`}>
+      <div className='wrapper'>
         <OffCanvasMenu />
-        <div className={`${styles.container} ${isOpen === styles.isOpen}`}>
-          {children}
-        </div>
+        <div className={`container ${isOpen === 'isOpen'}`}>{children}</div>
       </div>
     </motion.main>
   )

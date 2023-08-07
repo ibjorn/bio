@@ -1,5 +1,5 @@
 import BlogIndex from '../../components/blog/blogIndex'
-import BlogLayout from '../../components/layouts/blogLayout'
+// import BlogLayout from '../../components/layouts/blogLayout'
 import Meta from '../../components/meta'
 import { getSortedPostsData } from '../../lib/posts'
 
@@ -7,7 +7,7 @@ export default async function Blog() {
   // const { allPostsData } = props
   const allPostsData = await getSortedPostsData()
   return (
-    <BlogLayout>
+    <>
       <Meta
         title='A personal web development diary'
         description='Some notes, articles and thoughts on web development, the internet and web programming.'
@@ -16,7 +16,7 @@ export default async function Blog() {
         indexPage
       />
       <BlogIndex posts={allPostsData} />
-    </BlogLayout>
+    </>
   )
 }
 

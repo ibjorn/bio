@@ -1,8 +1,8 @@
-import styles from '../layouts/layout.module.scss'
+// import styles from '../layouts/layout.module.scss'
 
 const HomePage = () => {
   return (
-    <article className={styles.home}>
+    <article className='home'>
       {/* <h2>Status</h2>
       <h4>Open for business</h4> */}
       <p className='small'>

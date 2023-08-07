@@ -12,8 +12,8 @@
   }
 
   ::-webkit-scrollbar-track {
-    // -webkit-box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
-    // box-shadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)';
+    // -webkit-box-shadow:'inset 0 0 6px rgba(0, 0, 0, 0.3)';
+    // box-shadow:'inset 0 0 6px rgba(0, 0, 0, 0.3)';
     @apply bg-secondary;
   }
 
@@ -24,6 +24,7 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-lato);
+
     @media screen and (prefers-reduced-motion: reduce) {
       scroll-behavior: 'auto';
     }
@@ -47,7 +48,6 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-oswald);
     @apply font-heading;
   }
 }

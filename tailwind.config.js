@@ -13,8 +13,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // sans: ['Lato', 'sans-serif'],
-        sans: ['var(--font-lato)'],
-        heading: ['var(--font-oswald)']
+        sans: ['Lato', 'sans-serif'],
+        heading: ['Oswald', 'sans-serif']
       },
       // typography: {
       //   DEFAULT: {

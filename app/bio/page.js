@@ -1,4 +1,4 @@
-import BioLayout from '../../components/layouts/bioLayout'
+// import BioLayout from '../../components/layouts/bioLayout'
 import Meta from '../../components/meta'
 import BioPage from '../../components/page/bioPage'
 import { getPageData } from '../../lib/pages'
@@ -22,9 +22,9 @@ export default async function Bio() {
         keywords={pageData?.keywords}
         slug={pageData?.slug}
       />
-      <BioLayout>
-        <BioPage title={pageData?.title} body={pageData?.contentHtml} />
-      </BioLayout>
+      {/* <BioLayout> */}
+      <BioPage title={pageData?.title} body={pageData?.contentHtml} />
+      {/* </BioLayout> */}
     </>
   )
 }
