@@ -10,7 +10,7 @@ export const siteMeta = {
     'web development, web programming, progressive web apps, javascript, php, laravel, reactjs, next.js, gatsbyjs, wordpress',
   siteUrl: server,
   siteFavicon: '/favicon-32x32-cyan.png',
-  siteImage: '/images/bio-og-image.jpg',
+  siteImage: server + '/images/bio-og-image.jpg',
   social: {
     twitter: 'https://twitter.com/blackalsatian',
     githubUrl: 'https://github.com/ibjorn',
@@ -26,5 +26,7 @@ export const siteMeta = {
 export const siteConfig = {
   placeHolderImage: '/images/placeholder.png'
 }
+
+export const openGraphImage = { images: [`${server}/images/bio-og-image.jpg`] }
 
 export const FALLBACK = 'blocking'

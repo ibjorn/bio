@@ -1,28 +1,33 @@
 import BlogPost from '../../../components/blog/blogPost'
-import Meta from '../../../components/meta'
+import { openGraphImage } from '../../../config'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 
 export async function generateStaticParams() {
   return getAllPostIds()
 }
 
+export async function generateMetadata({ params }) {
+  const postData = await getPostData(params.id)
+
+  return {
+    title: postData?.title,
+    description: postData?.description,
+    keywords: postData?.keywords,
+    openGraph: {
+      ...openGraphImage,
+      title: postData?.title,
+      description: postData?.description
+    }
+  }
+}
+
 export default async function Post({ params }) {
   const postData = await getPostData(params.id)
   return (
-    <>
-      <Meta
-        title={postData?.title}
-        description={postData?.description}
-        keywords={postData?.keywords}
-        slug={postData?.slug}
-        image={postData?.image}
-        blogPost
-      />
-      <BlogPost
-        title={postData?.title}
-        date={postData?.date}
-        content={postData?.contentHtml}
-      />
-    </>
+    <BlogPost
+      title={postData?.title}
+      date={postData?.date}
+      content={postData?.contentHtml}
+    />
   )
 }
