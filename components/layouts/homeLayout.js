@@ -1,11 +1,5 @@
 import Image from 'next/image'
 import homeCoverPic from '../../public/images/background/lounge.jpg'
-// import {
-//   container,
-//   imgWrap,
-//   section,
-//   textOverlayContainer
-// } from './layout.module.scss'
 
 const HomeLayout = ({ children }) => {
   return (
