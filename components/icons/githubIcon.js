@@ -7,6 +7,7 @@ const GitHub = ({ color = '#ffffff', width = '24', height = '24' }) => {
       viewBox='0 0 16 16'
       fill={color}
       stroke={color}
+      strokeWidth='0'
     >
       <path
         fill={color}

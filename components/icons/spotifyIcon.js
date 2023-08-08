@@ -12,6 +12,7 @@ const Spotify = ({ color = '#ffffff', width = '24', height = '24' }) => {
       textRendering='geometricPrecision'
       viewBox='0 0 1333.3 1333.3'
       stroke={color}
+      strokeWidth='0'
     >
       <path
         fillRule='nonzero'
