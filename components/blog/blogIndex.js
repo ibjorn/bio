@@ -1,15 +1,14 @@
 import Link from 'next/link'
-import { oswald } from '../../app/fonts'
 import Date from '../date'
 
 export default function BlogIndex({ posts }) {
   return (
     <div className='blogIndexWrapper'>
-      <h1 className={oswald.className}>Blog</h1>
+      <h1>Blog</h1>
 
       {posts.map(({ id, date, title, description }) => (
         <article key={id} className='blogIntro'>
-          <h2 className={oswald.className}>
+          <h2>
             <Link href={`/blog/${id}/`}>{title}</Link>
           </h2>
           <small>

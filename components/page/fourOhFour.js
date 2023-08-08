@@ -1,5 +1,3 @@
-// import { fourOhwrapper } from '../layouts/layout.module.scss'
-
 const FourOhFour = () => {
   return (
     <article className='fourOhwrapper'>
