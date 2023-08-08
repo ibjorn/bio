@@ -1,9 +1,18 @@
+import Link from 'next/link'
+
 const FourOhFour = () => {
   return (
-    <article className='fourOhwrapper'>
-      <h1>404</h1>
-      <h2>Hmm.. well this is awkward.</h2>
-    </article>
+    <section className='section'>
+      <div className='container'>
+        <article className='fourOhwrapper'>
+          <h1>404</h1>
+          <h2>Hmm.. well this is awkward.</h2>
+          <p>
+            Lets <Link href='/'>go home</Link>.
+          </p>
+        </article>
+      </div>
+    </section>
   )
 }
 

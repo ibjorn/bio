@@ -1,4 +1,4 @@
-import FourOhFour from '../../components/page/fourOhFour'
+import FourOhFour from '../components/page/fourOhFour'
 
 export const metadata = {
   title: '404 - Not found'
