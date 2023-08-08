@@ -1,3 +1,4 @@
+'use client'
 const BlogLayout = ({ children }) => {
   return (
     <section className='sectionWrap'>

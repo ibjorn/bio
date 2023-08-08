@@ -2,7 +2,7 @@
   @apply justify-items-end px-4 items-center hidden lg:flex text-sm uppercase;
 
   ul {
-    @apply flex items-center justify-between py-4 mx-auto;
+    @apply flex items-center justify-between py-4 mx-auto font-sans font-normal;
 
     li {
       @apply flex justify-between px-2;
@@ -13,12 +13,12 @@
         }
       }
 
-      // a {
+      /* // a {
       //   @apply no-underline transition ease-in duration-300 border-b border-transparent;
       //   &:hover {
       //     @apply no-underline border-b border-white;
       //   }
-      // }
+      // } */
     }
   }
 }

@@ -1,8 +1,9 @@
+'use client'
 const BioLayout = ({ children }) => {
   return (
-      <section className='sectionWrap'>
-        <div className='containerWrap'>{children}</div>
-      </section>
+    <section className='sectionWrap'>
+      <div className='containerWrap'>{children}</div>
+    </section>
   )
 }
 
