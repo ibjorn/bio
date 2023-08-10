@@ -1,4 +1,4 @@
-// import { bio } from '../layouts/layout.module.scss'
+'use client'
 
 const BioPage = ({ title, body }) => {
   return (

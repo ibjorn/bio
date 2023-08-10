@@ -1,6 +1,5 @@
-import { dev } from '../utils/helpers'
-
-export const server = dev ? 'http://localhost:3000' : 'https://bjorn.africa'
+export const server =
+  process.env.NODE_ENV !== 'development' ? '' : 'https://bjorn.africa'
 
 export const siteMeta = {
   siteName: 'Björn Potgieter, Web Developer',

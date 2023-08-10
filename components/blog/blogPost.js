@@ -1,3 +1,5 @@
+'use client'
+
 import Date from '../date'
 
 const BlogPost = ({ title, date, content }) => {

@@ -1,4 +1,4 @@
-// import styles from '../layouts/layout.module.scss'
+'use client'
 
 const HomePage = () => {
   return (

@@ -1,7 +1,7 @@
 {
   "name": "bjorn.africa",
   "homepage": "https://bjorn.africa",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Björn Potgieter <bjorn@blackalsatian.co.za> (https://bjorn.africa)",
   "private": true,
   "scripts": {

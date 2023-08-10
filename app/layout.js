@@ -3,7 +3,6 @@ import MainLayoutWrap from '../components/layouts/mainLayoutWrap'
 import { GTM_ID } from '../lib/gtm'
 import OffCanvasProvider from '../store/offCanvasProvider'
 import '../styles/global.scss'
-import { dev } from '../utils/helpers'
 import { lato, oswald } from './fonts'
 // import { headers } from 'next/headers'
 
@@ -23,7 +22,7 @@ export default function RootLayout({ children }) {
         <Analytics />
       </head>
       <body suppressHydrationWarning={true}>
-        {!dev && (
+        {process.env.NODE_ENV !== 'development' && (
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
