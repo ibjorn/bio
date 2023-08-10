@@ -59,7 +59,7 @@ export default function MainLayoutWrap({ children }) {
             <Header home={isHomePage} dark={isBlogPage} />
             <LazyMotion features={domAnimation}>
               <AnimatePresence
-                exitBeforeEnter
+                mode='wait'
                 initial={!isHomePage}
                 onExitComplete={() => window.scrollTo(0, 0)}
               >
