@@ -8,7 +8,7 @@ const FourOhFour = () => {
           <h1>404</h1>
           <h2>Hmm.. well this is awkward.</h2>
           <p>
-            Lets <Link href='/'>go home</Link>.
+            Let&apos;s <Link href='/'>go home</Link>.
           </p>
         </article>
       </div>

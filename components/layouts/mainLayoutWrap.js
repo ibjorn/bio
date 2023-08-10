@@ -44,7 +44,6 @@ export default function MainLayoutWrap({ children }) {
 
   const isHomePage = pathname === '/'
   const isBlogPage = pathname.includes('/blog')
-  const isNotFoundPage = pathname.includes('/404')
 
   return (
     <motion.main
@@ -56,12 +55,8 @@ export default function MainLayoutWrap({ children }) {
       <div className='wrapper'>
         <OffCanvasMenu />
         <div className={`${isOpen === 'isOpen'}`}>
-          <div
-            className={`${'mainWrap'} ${
-              isBlogPage || isNotFoundPage ? 'whiteBg' : ''
-            }`}
-          >
-            <Header home={isHomePage} dark={isBlogPage || isNotFoundPage} />
+          <div className={`${'mainWrap'} ${isBlogPage ? 'whiteBg' : ''}`}>
+            <Header home={isHomePage} dark={isBlogPage} />
             <LazyMotion features={domAnimation}>
               <AnimatePresence
                 exitBeforeEnter
@@ -71,7 +66,7 @@ export default function MainLayoutWrap({ children }) {
                 {children}
               </AnimatePresence>
             </LazyMotion>
-            <Footer home={isHomePage} dark={isBlogPage || isNotFoundPage} />
+            <Footer home={isHomePage} dark={isBlogPage} />
           </div>
         </div>
       </div>
