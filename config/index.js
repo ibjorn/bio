@@ -4,7 +4,7 @@ export const server =
 export const siteMeta = {
   siteName: 'Björn Potgieter, Web Developer',
   siteDescription:
-    'Bio and testing ground for an obessive, compulsive web developer.',
+    'Bio and testing ground for an obsessive, compulsive web developer.',
   siteKeywords:
     'web development, web programming, progressive web apps, javascript, php, laravel, reactjs, next.js, gatsbyjs, wordpress',
   siteUrl: server,
