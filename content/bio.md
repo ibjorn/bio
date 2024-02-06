@@ -29,6 +29,7 @@ I’m not a pure backend or frontend dev, but since working with React, I feel m
 
 - HTML &amp; CSS
 - JavaScript
+- TypeScript
 - PHP
 - MySQL
 - Docker
@@ -39,9 +40,14 @@ I’m not a pure backend or frontend dev, but since working with React, I feel m
 - ReactJS
 - Next.js
 - GatsbyJS
+- Vue.js
+- Pinia
+- Vuetify
+- Vitest
 - WordPress, also headless
 - REST API
 - GraphQL
+- gRPC (frontend)
 - SASS
 - TailwindCSS
 - Styled Components
@@ -52,7 +58,7 @@ I’m not a pure backend or frontend dev, but since working with React, I feel m
 - Decoupled / Headless Applications
 - Progressive Web Apps
 - API Development
-- SEO / Google Analytics / Tag Manager 
+- SEO / Google Analytics / Tag Manager
 - Performance Optimisation
 - Knowledge of Modern Tech Stacks
 - TailwindCSS / Bootstrap / SASS

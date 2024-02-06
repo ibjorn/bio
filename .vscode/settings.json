@@ -1,10 +1,10 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true,
-    "source.addMissingImports": true,
-    "source.fixAll.stylelint": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "files.associations": {
     "*.css": "tailwindcss",
