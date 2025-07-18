@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   trailingSlash: true,
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
   },
