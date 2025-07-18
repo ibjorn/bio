@@ -2,10 +2,18 @@
 
 import { usePathname, useSearchParams } from 'next/navigation'
 import Script from 'next/script'
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { GTM_ID, pageview } from '../../lib/gtm'
 
-export default function Analytics() {
+export default function AnalyticsWrapper() {
+  return (
+    <Suspense fallback={<div>Loading Analytics...</div>}>
+      <Analytics />
+    </Suspense>
+  )
+}
+
+function Analytics() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 

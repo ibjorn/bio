@@ -13,7 +13,8 @@ export const metadata = {
     title: 'A personal web development diary',
     description:
       'Some notes, articles and thoughts on web development, the internet and web programming.'
-  }
+  },
+  metadataBase: new URL('https://bjorn.africa'),
 }
 
 export default async function Blog() {

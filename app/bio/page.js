@@ -9,6 +9,7 @@ export async function generateMetadata() {
     title: pageData?.title,
     description: pageData?.description,
     keywords: pageData?.keywords,
+    metadataBase: new URL('https://bjorn.africa'),
     openGraph: {
       ...openGraphImage,
       title: pageData?.title,

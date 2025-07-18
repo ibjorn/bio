@@ -6,6 +6,7 @@ export const metadata = {
   title: siteMeta.siteName,
   description: siteMeta.siteDescription,
   keywords: siteMeta.siteKeywords,
+  metadataBase: new URL('https://bjorn.africa'),
   openGraph: {
     ...openGraphImage,
     title: siteMeta.siteName,

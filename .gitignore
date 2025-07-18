@@ -33,6 +33,7 @@ yarn-error.log*
 
 # notes
 /.bak/
+.github
 
 # Docker 
 .devcontainer/
